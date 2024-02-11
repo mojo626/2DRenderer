@@ -5,7 +5,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/includes -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/include
+C_INCLUDES = -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/includes -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glm -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/include
 
 C_FLAGSx86_64 =  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
 
@@ -13,7 +13,7 @@ C_FLAGS =  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOS
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/includes -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/include
+CXX_INCLUDES = -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/includes -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glm -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/include
 
 CXX_FLAGSx86_64 = -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
 
