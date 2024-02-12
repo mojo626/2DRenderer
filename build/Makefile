@@ -213,101 +213,101 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-glad.o: glad.c.o
-.PHONY : glad.o
+lib/glad.o: lib/glad.c.o
+.PHONY : lib/glad.o
 
 # target to build an object file
-glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/glad.c.o
-.PHONY : glad.c.o
+lib/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/glad.c.o
+.PHONY : lib/glad.c.o
 
-glad.i: glad.c.i
-.PHONY : glad.i
+lib/glad.i: lib/glad.c.i
+.PHONY : lib/glad.i
 
 # target to preprocess a source file
-glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/glad.c.i
-.PHONY : glad.c.i
+lib/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/glad.c.i
+.PHONY : lib/glad.c.i
 
-glad.s: glad.c.s
-.PHONY : glad.s
+lib/glad.s: lib/glad.c.s
+.PHONY : lib/glad.s
 
 # target to generate assembly for a file
-glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/glad.c.s
-.PHONY : glad.c.s
+lib/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/glad.c.s
+.PHONY : lib/glad.c.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-util/stb_image.o: util/stb_image.cpp.o
-.PHONY : util/stb_image.o
+src/util/stb_image.o: src/util/stb_image.cpp.o
+.PHONY : src/util/stb_image.o
 
 # target to build an object file
-util/stb_image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.o
-.PHONY : util/stb_image.cpp.o
+src/util/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/util/stb_image.cpp.o
+.PHONY : src/util/stb_image.cpp.o
 
-util/stb_image.i: util/stb_image.cpp.i
-.PHONY : util/stb_image.i
+src/util/stb_image.i: src/util/stb_image.cpp.i
+.PHONY : src/util/stb_image.i
 
 # target to preprocess a source file
-util/stb_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.i
-.PHONY : util/stb_image.cpp.i
+src/util/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/util/stb_image.cpp.i
+.PHONY : src/util/stb_image.cpp.i
 
-util/stb_image.s: util/stb_image.cpp.s
-.PHONY : util/stb_image.s
+src/util/stb_image.s: src/util/stb_image.cpp.s
+.PHONY : src/util/stb_image.s
 
 # target to generate assembly for a file
-util/stb_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.s
-.PHONY : util/stb_image.cpp.s
+src/util/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/util/stb_image.cpp.s
+.PHONY : src/util/stb_image.cpp.s
 
-util/texture.o: util/texture.cpp.o
-.PHONY : util/texture.o
+src/util/texture.o: src/util/texture.cpp.o
+.PHONY : src/util/texture.o
 
 # target to build an object file
-util/texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/texture.cpp.o
-.PHONY : util/texture.cpp.o
+src/util/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/util/texture.cpp.o
+.PHONY : src/util/texture.cpp.o
 
-util/texture.i: util/texture.cpp.i
-.PHONY : util/texture.i
+src/util/texture.i: src/util/texture.cpp.i
+.PHONY : src/util/texture.i
 
 # target to preprocess a source file
-util/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/texture.cpp.i
-.PHONY : util/texture.cpp.i
+src/util/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/util/texture.cpp.i
+.PHONY : src/util/texture.cpp.i
 
-util/texture.s: util/texture.cpp.s
-.PHONY : util/texture.s
+src/util/texture.s: src/util/texture.cpp.s
+.PHONY : src/util/texture.s
 
 # target to generate assembly for a file
-util/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/texture.cpp.s
-.PHONY : util/texture.cpp.s
+src/util/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/util/texture.cpp.s
+.PHONY : src/util/texture.cpp.s
 
 # Help Target
 help:
@@ -325,18 +325,18 @@ help:
 	@echo "... update_mappings"
 	@echo "... game"
 	@echo "... glfw"
-	@echo "... glad.o"
-	@echo "... glad.i"
-	@echo "... glad.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... util/stb_image.o"
-	@echo "... util/stb_image.i"
-	@echo "... util/stb_image.s"
-	@echo "... util/texture.o"
-	@echo "... util/texture.i"
-	@echo "... util/texture.s"
+	@echo "... lib/glad.o"
+	@echo "... lib/glad.i"
+	@echo "... lib/glad.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/util/stb_image.o"
+	@echo "... src/util/stb_image.i"
+	@echo "... src/util/stb_image.s"
+	@echo "... src/util/texture.o"
+	@echo "... src/util/texture.i"
+	@echo "... src/util/texture.s"
 .PHONY : help
 
 
