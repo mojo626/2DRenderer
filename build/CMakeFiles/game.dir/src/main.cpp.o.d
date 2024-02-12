@@ -1009,4 +1009,5 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/SpriteRenderer.hpp \
   /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glm/glm/gtc/matrix_transform.hpp \
   /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/texture.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/stb_image.h
+  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/stb_image.h \
+  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/WindowManager.hpp
