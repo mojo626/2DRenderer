@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/glad.c.o.d"
   "CMakeFiles/game.dir/main.cpp.o"
   "CMakeFiles/game.dir/main.cpp.o.d"
+  "CMakeFiles/game.dir/util/stb_image.cpp.o"
+  "CMakeFiles/game.dir/util/stb_image.cpp.o.d"
+  "CMakeFiles/game.dir/util/texture.cpp.o"
+  "CMakeFiles/game.dir/util/texture.cpp.o.d"
   "game"
   "game.pdb"
 )

@@ -261,6 +261,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+util/stb_image.o: util/stb_image.cpp.o
+.PHONY : util/stb_image.o
+
+# target to build an object file
+util/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.o
+.PHONY : util/stb_image.cpp.o
+
+util/stb_image.i: util/stb_image.cpp.i
+.PHONY : util/stb_image.i
+
+# target to preprocess a source file
+util/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.i
+.PHONY : util/stb_image.cpp.i
+
+util/stb_image.s: util/stb_image.cpp.s
+.PHONY : util/stb_image.s
+
+# target to generate assembly for a file
+util/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/stb_image.cpp.s
+.PHONY : util/stb_image.cpp.s
+
+util/texture.o: util/texture.cpp.o
+.PHONY : util/texture.o
+
+# target to build an object file
+util/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/texture.cpp.o
+.PHONY : util/texture.cpp.o
+
+util/texture.i: util/texture.cpp.i
+.PHONY : util/texture.i
+
+# target to preprocess a source file
+util/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/texture.cpp.i
+.PHONY : util/texture.cpp.i
+
+util/texture.s: util/texture.cpp.s
+.PHONY : util/texture.s
+
+# target to generate assembly for a file
+util/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/util/texture.cpp.s
+.PHONY : util/texture.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -283,6 +331,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... util/stb_image.o"
+	@echo "... util/stb_image.i"
+	@echo "... util/stb_image.s"
+	@echo "... util/texture.o"
+	@echo "... util/texture.i"
+	@echo "... util/texture.s"
 .PHONY : help
 
 
