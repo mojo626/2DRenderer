@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/lib/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/lib/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/install_manifest.txt" files)
+file(READ "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/lib/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})
