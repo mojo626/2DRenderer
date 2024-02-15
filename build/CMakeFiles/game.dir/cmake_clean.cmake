@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/game.dir/lib/glad.c.o"
-  "CMakeFiles/game.dir/lib/glad.c.o.d"
+  "CMakeFiles/game.dir/includes/glad.c.o"
+  "CMakeFiles/game.dir/includes/glad.c.o.d"
   "CMakeFiles/game.dir/src/main.cpp.o"
   "CMakeFiles/game.dir/src/main.cpp.o.d"
   "CMakeFiles/game.dir/src/util/stb_image.cpp.o"

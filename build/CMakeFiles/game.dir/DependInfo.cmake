@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/lib/glad.c" "CMakeFiles/game.dir/lib/glad.c.o" "gcc" "CMakeFiles/game.dir/lib/glad.c.o.d"
-  "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/src/main.cpp" "CMakeFiles/game.dir/src/main.cpp.o" "gcc" "CMakeFiles/game.dir/src/main.cpp.o.d"
-  "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/src/util/stb_image.cpp" "CMakeFiles/game.dir/src/util/stb_image.cpp.o" "gcc" "CMakeFiles/game.dir/src/util/stb_image.cpp.o.d"
-  "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/src/util/texture.cpp" "CMakeFiles/game.dir/src/util/texture.cpp.o" "gcc" "CMakeFiles/game.dir/src/util/texture.cpp.o.d"
+  "/Users/ben/Repositories/2DRenderer/includes/glad.c" "CMakeFiles/game.dir/includes/glad.c.o" "gcc" "CMakeFiles/game.dir/includes/glad.c.o.d"
+  "/Users/ben/Repositories/2DRenderer/src/main.cpp" "CMakeFiles/game.dir/src/main.cpp.o" "gcc" "CMakeFiles/game.dir/src/main.cpp.o.d"
+  "/Users/ben/Repositories/2DRenderer/src/util/stb_image.cpp" "CMakeFiles/game.dir/src/util/stb_image.cpp.o" "gcc" "CMakeFiles/game.dir/src/util/stb_image.cpp.o.d"
+  "/Users/ben/Repositories/2DRenderer/src/util/texture.cpp" "CMakeFiles/game.dir/src/util/texture.cpp.o" "gcc" "CMakeFiles/game.dir/src/util/texture.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

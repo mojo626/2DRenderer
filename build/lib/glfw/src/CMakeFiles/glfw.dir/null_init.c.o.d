@@ -1,7 +1,7 @@
 lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/null_init.c \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/internal.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/../include/GLFW/glfw3.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/null_init.c \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/internal.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/../include/GLFW/glfw3.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdint.h \
@@ -30,9 +30,9 @@ lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/platform.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/null_platform.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/cocoa_platform.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/platform.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/null_platform.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
@@ -787,12 +787,12 @@ lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDUsageTables.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDValue.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDTransaction.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/null_joystick.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/cocoa_joystick.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/null_joystick.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOCFPlugIn.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/posix_thread.h \
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/posix_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/sched.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/qos.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src/cocoa_time.h
+  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_time.h

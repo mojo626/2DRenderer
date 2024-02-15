@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ben/OneDrive/Coding/Cpp/2Drenderer
+# Install script for directory: /Users/ben/Repositories/2DRenderer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/lib/glfw/cmake_install.cmake")
+  include("/Users/ben/Repositories/2DRenderer/build/lib/glfw/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ben/Repositories/2DRenderer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

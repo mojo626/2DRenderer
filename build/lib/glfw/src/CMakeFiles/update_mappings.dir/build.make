@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer
+CMAKE_SOURCE_DIR = /Users/ben/Repositories/2DRenderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build
+CMAKE_BINARY_DIR = /Users/ben/Repositories/2DRenderer/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include lib/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include lib/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 lib/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/ben/Repositories/2DRenderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /Users/ben/Repositories/2DRenderer/lib/glfw/src && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/ben/Repositories/2DRenderer/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: lib/glfw/src/CMakeFiles/update_mappings
 update_mappings: lib/glfw/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ lib/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/build
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /Users/ben/Repositories/2DRenderer/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/src /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ben/Repositories/2DRenderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ben/Repositories/2DRenderer /Users/ben/Repositories/2DRenderer/lib/glfw/src /Users/ben/Repositories/2DRenderer/build /Users/ben/Repositories/2DRenderer/build/lib/glfw/src /Users/ben/Repositories/2DRenderer/build/lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/depend
 

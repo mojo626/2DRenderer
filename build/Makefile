@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ben/OneDrive/Coding/Cpp/2Drenderer
+CMAKE_SOURCE_DIR = /Users/ben/Repositories/2DRenderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ben/OneDrive/Coding/Cpp/2Drenderer/build
+CMAKE_BINARY_DIR = /Users/ben/Repositories/2DRenderer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/CMakeFiles /Users/ben/OneDrive/Coding/Cpp/2Drenderer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ben/Repositories/2DRenderer/build/CMakeFiles /Users/ben/Repositories/2DRenderer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ben/OneDrive/Coding/Cpp/2Drenderer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ben/Repositories/2DRenderer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -213,29 +213,29 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-lib/glad.o: lib/glad.c.o
-.PHONY : lib/glad.o
+includes/glad.o: includes/glad.c.o
+.PHONY : includes/glad.o
 
 # target to build an object file
-lib/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/glad.c.o
-.PHONY : lib/glad.c.o
+includes/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/includes/glad.c.o
+.PHONY : includes/glad.c.o
 
-lib/glad.i: lib/glad.c.i
-.PHONY : lib/glad.i
+includes/glad.i: includes/glad.c.i
+.PHONY : includes/glad.i
 
 # target to preprocess a source file
-lib/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/glad.c.i
-.PHONY : lib/glad.c.i
+includes/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/includes/glad.c.i
+.PHONY : includes/glad.c.i
 
-lib/glad.s: lib/glad.c.s
-.PHONY : lib/glad.s
+includes/glad.s: includes/glad.c.s
+.PHONY : includes/glad.s
 
 # target to generate assembly for a file
-lib/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/lib/glad.c.s
-.PHONY : lib/glad.c.s
+includes/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/includes/glad.c.s
+.PHONY : includes/glad.c.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -325,9 +325,9 @@ help:
 	@echo "... update_mappings"
 	@echo "... game"
 	@echo "... glfw"
-	@echo "... lib/glad.o"
-	@echo "... lib/glad.i"
-	@echo "... lib/glad.s"
+	@echo "... includes/glad.o"
+	@echo "... includes/glad.i"
+	@echo "... includes/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

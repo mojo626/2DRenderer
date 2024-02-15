@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = -D_GLFW_COCOA
 
-C_INCLUDES = -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/include -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw/src -I/Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/src
+C_INCLUDES = -I/Users/ben/Repositories/2DRenderer/lib/glfw/include -I/Users/ben/Repositories/2DRenderer/lib/glfw/src -I/Users/ben/Repositories/2DRenderer/build/lib/glfw/src
 
 C_FLAGSx86_64 = -std=c99 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC -Wall
 

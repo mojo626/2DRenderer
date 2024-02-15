@@ -1,5 +1,5 @@
 CMakeFiles/game.dir/src/util/texture.cpp.o: \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/texture.cpp \
+  /Users/ben/Repositories/2DRenderer/src/util/texture.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
@@ -730,6 +730,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/texture.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/includes/glad/glad.h \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/includes/KHR/khrplatform.h
+  /Users/ben/Repositories/2DRenderer/src/util/texture.h \
+  /Users/ben/Repositories/2DRenderer/includes/glad/glad.h \
+  /Users/ben/Repositories/2DRenderer/includes/KHR/khrplatform.h

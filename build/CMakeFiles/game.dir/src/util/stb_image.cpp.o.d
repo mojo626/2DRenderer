@@ -1,6 +1,6 @@
 CMakeFiles/game.dir/src/util/stb_image.cpp.o: \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/stb_image.cpp \
-  /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/src/util/stb_image.h \
+  /Users/ben/Repositories/2DRenderer/src/util/stb_image.cpp \
+  /Users/ben/Repositories/2DRenderer/src/util/stb_image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config_site \

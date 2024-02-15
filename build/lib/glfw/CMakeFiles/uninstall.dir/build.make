@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer
+CMAKE_SOURCE_DIR = /Users/ben/Repositories/2DRenderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build
+CMAKE_BINARY_DIR = /Users/ben/Repositories/2DRenderer/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include lib/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include lib/glfw/CMakeFiles/uninstall.dir/progress.make
 
 lib/glfw/CMakeFiles/uninstall:
-	cd /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/cmake_uninstall.cmake
+	cd /Users/ben/Repositories/2DRenderer/build/lib/glfw && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -P /Users/ben/Repositories/2DRenderer/build/lib/glfw/cmake_uninstall.cmake
 
 uninstall: lib/glfw/CMakeFiles/uninstall
 uninstall: lib/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ lib/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/build
 
 lib/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/ben/Repositories/2DRenderer/build/lib/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/clean
 
 lib/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/lib/glfw /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw /Users/ben/Library/CloudStorage/OneDrive-Personal/Coding/Cpp/2Drenderer/build/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ben/Repositories/2DRenderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ben/Repositories/2DRenderer /Users/ben/Repositories/2DRenderer/lib/glfw /Users/ben/Repositories/2DRenderer/build /Users/ben/Repositories/2DRenderer/build/lib/glfw /Users/ben/Repositories/2DRenderer/build/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/depend
 
