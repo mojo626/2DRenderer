@@ -61,8 +61,6 @@ class SpriteRenderer {
             this->shader.SetMatrix4("model", model);
 
             this->shader.setVec3("spriteColor", color);
-
-            this->shader.setVec2("rectSize", size);
             
 
             glBindVertexArray(this->quadVAO);

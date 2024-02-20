@@ -1094,6 +1094,7 @@ CMakeFiles/game.dir/src/main.cpp.o: /Users/ben/Repositories/2DRenderer/src/main.
   /Users/ben/Repositories/2DRenderer/lib/glm/glm/vector_relational.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/Line.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/delaunator.hpp \
+  /Users/ben/Repositories/2DRenderer/src/util/emst.hpp \
   /Users/ben/Repositories/2DRenderer/src/DungeonGen/DungeonGen.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/Line.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/Shaders.hpp \
