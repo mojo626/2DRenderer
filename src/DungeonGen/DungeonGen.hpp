@@ -403,6 +403,43 @@ class DungeonGen {
                 }
             }
 
+            for (int i = 0; i < hallways.size(); i++)
+            {
+                if (hallways[i].x < topLeft.x)
+                {
+                    topLeft.x = hallways[i].x;
+                }
+                if (hallways[i].z < topLeft.x)
+                {
+                    topLeft.x = hallways[i].z;
+                }
+                if (hallways[i].y < topLeft.y)
+                {
+                    topLeft.y = hallways[i].y;
+                }
+                if (hallways[i].w < topLeft.y)
+                {
+                    topLeft.y = hallways[i].w;
+                }
+
+                 if (hallways[i].x > bottomRight.x)
+                {
+                    bottomRight.x = hallways[i].x;
+                }
+                if (hallways[i].z > bottomRight.x)
+                {
+                    bottomRight.x = hallways[i].z;
+                }
+                if (hallways[i].y > bottomRight.y)
+                {
+                    bottomRight.y = hallways[i].y;
+                }
+                if (hallways[i].w > bottomRight.y)
+                {
+                    bottomRight.y = hallways[i].w;
+                }
+            }
+
             glm::vec2 gridDimensions = glm::vec2((bottomRight.x - topLeft.x)/gridSize, (bottomRight.y - topLeft.y)/gridSize);
 
             for (int x = 0; x < gridDimensions.x; x++)
@@ -414,8 +451,6 @@ class DungeonGen {
                     dungeon.grid[x].push_back(0);
                 }
             }
-
-
 
 
             for (int i = 0; i < mainRooms.size(); i++)
@@ -458,22 +493,44 @@ class DungeonGen {
                     vertical = true;
                 }
 
-                glm::vec2 p1 = glm::vec2(round((hallways[i].x - topLeft.x)/gridSize), round((hallways[i].y - topLeft.y)/gridSize));
-                glm::vec2 p2 = glm::vec2(round((hallways[i].z - topLeft.x)/gridSize), round((hallways[i].w - topLeft.y)/gridSize));
+                glm::vec2 p1 = glm::vec2(floor((hallways[i].x - topLeft.x)/gridSize), floor((hallways[i].y - topLeft.y)/gridSize));
+                glm::vec2 p2 = glm::vec2(floor((hallways[i].z - topLeft.x)/gridSize), floor((hallways[i].w - topLeft.y)/gridSize));
 
                 if (!vertical)
                 {
                     if (p1.x < p2.x)
                     {
-                        for (int x = 0; x < p2.x - p1.x; x++)
+                        for (int x = 0; x < p2.x - p1.x + 1; x++)
                         {
-                            dungeon.grid[x + p1.x][p1.y] = 1;
+                            Set2DVector(&dungeon.grid, x + p1.x, p1.y, 1);
+                            Set2DVector(&dungeon.grid, x + p1.x, p1.y+1, 1);
+                            Set2DVector(&dungeon.grid, x + p1.x, p1.y-1, 1);
                         }
                     } else if (p1.x > p2.x)
                     {
-                        for (int x = 0; x < p1.x - p2.x; x++)
+                        for (int x = 0; x < p1.x - p2.x + 1; x++)
+                        { 
+                            Set2DVector(&dungeon.grid, x + p2.x, p1.y, 1);
+                            Set2DVector(&dungeon.grid, x + p2.x, p1.y-1, 1);
+                            Set2DVector(&dungeon.grid, x + p2.x, p1.y+1, 1);
+                        }
+                    }
+                } else {
+                    if (p1.y > p2.y)
+                    {
+                        for (int y = 0; y < p1.y - p2.y; y++)
                         {
-                            dungeon.grid[x + p2.x][p1.y] = 1;
+                            Set2DVector(&dungeon.grid, p1.x, p2.y + y, 1);
+                            Set2DVector(&dungeon.grid, p1.x+1, p2.y + y, 1);
+                            Set2DVector(&dungeon.grid, p1.x-1, p2.y + y, 1);
+                        }
+                    } else if (p2.y > p1.y)
+                    {
+                        for (int y = 0; y < p2.y - p1.y; y++)
+                        {
+                            Set2DVector(&dungeon.grid, p1.x, p1.y + y, 1);
+                            Set2DVector(&dungeon.grid, p1.x+1, p1.y + y, 1);
+                            Set2DVector(&dungeon.grid, p1.x-1, p1.y + y, 1);
                         }
                     }
                 }
@@ -507,6 +564,18 @@ class DungeonGen {
             }
 
             return false;
+        }
+
+        static void Set2DVector(std::vector<std::vector<int>> *vec, int x, int y, int value)
+        {
+            if (x >= vec->size() || y >= (*vec)[0].size() || x < 0 || y < 0)
+            {
+                return;
+            }
+
+            (*vec)[x][y] = value;
+
+            return;
         }
 
         

@@ -51,18 +51,7 @@ int main()
         //rendering
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-
-        //renderer.DrawSprite(glm::vec2(0.0f, 0.0f), glm::vec2(200.0f, 200.0f), 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));
-
-        // for (int i = 0; i < dungeon.hallwayRooms.size(); i++)
-        // {
-        //     renderer.DrawSprite(dungeon.hallwayRooms[i].pos, dungeon.hallwayRooms[i].size, 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));
-        // }
-
-        // for (int i = 0; i < dungeon.mainRooms.size(); i++)
-        // {
-        //     renderer.DrawSprite(dungeon.mainRooms[i].pos, dungeon.mainRooms[i].size, 0.0f, glm::vec3(0.0f, 0.0f, 1.0f));
-        // }
+        
 
         for (int x = 0; x < dungeon.grid.size(); x++)
         {
@@ -75,15 +64,12 @@ int main()
             }
         }
 
-
-        // for (int i = 0; i < newConnections.size(); i++)
+        // for (int i = 0; i < dungeon.mainRooms.size(); i++)
         // {
-        //     //lines[i].setColor(glm::vec3(1.0f, 1.0f, 1.0f));
-        //     Line line(glm::vec3(newConnections[i].x, newConnections[i].y, 0), glm::vec3(newConnections[i].z, newConnections[i].w, 0));
-        //     line.setMVP(projection);
-        //     line.setColor(glm::vec3(0.0, 1.0, 0.0));
-        //     line.draw();
+        //     renderer.DrawSprite(dungeon.mainRooms[i].pos, dungeon.mainRooms[i].size, 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));
         // }
+
+
 
 
 
