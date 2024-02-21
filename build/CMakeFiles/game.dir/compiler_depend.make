@@ -1096,7 +1096,10 @@ CMakeFiles/game.dir/src/main.cpp.o: /Users/ben/Repositories/2DRenderer/src/main.
   /Users/ben/Repositories/2DRenderer/src/util/delaunator.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/emst.hpp \
   /Users/ben/Repositories/2DRenderer/src/DungeonGen/DungeonGen.hpp \
+  /Users/ben/Repositories/2DRenderer/src/util/Camera.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/Line.hpp \
+  /Users/ben/Repositories/2DRenderer/src/util/Player.hpp \
+  /Users/ben/Repositories/2DRenderer/src/util/RuleTile.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/Shaders.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/SpriteRenderer.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/WindowManager.hpp \
@@ -2070,6 +2073,12 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h:
 
 /Users/ben/Repositories/2DRenderer/src/util/SpriteRenderer.hpp:
+
+/Users/ben/Repositories/2DRenderer/src/util/RuleTile.hpp:
+
+/Users/ben/Repositories/2DRenderer/src/util/Player.hpp:
+
+/Users/ben/Repositories/2DRenderer/src/util/Camera.hpp:
 
 /Users/ben/Repositories/2DRenderer/src/util/Line.hpp:
 

@@ -70,16 +70,16 @@ class WindowManager {
             if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
                 glfwSetWindowShouldClose(window, true);
                 
-            if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+            if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
                 inputs.UP = true;
             
-            if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+            if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
                 inputs.DOWN = true;
 
-            if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+            if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
                 inputs.LEFT = true;
 
-            if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+            if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS || glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
                 inputs.RIGHT = true;
 
 

@@ -12,6 +12,8 @@
 #include "util/Line.hpp"
 #include "util/emst.hpp"
 #include "util/Camera.hpp"
+#include "util/RuleTile.hpp"
+#include "util/Player.hpp"
 
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
@@ -38,12 +40,16 @@ int main()
 
 
 
-    Dungeon dungeon = DungeonGen::GenerateDungeon(100, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
+    Dungeon dungeon = DungeonGen::GenerateDungeon(80, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
 
 
-    Camera cam(0.3, 1);
+    
 
     Inputs inputs;
+    Player player(dungeon.mainRooms[0].middle(), 1.5);
+
+    Camera cam(0.15);
+    cam.SetPos(player.pos);
 
 
     while(!glfwWindowShouldClose(window))
@@ -51,28 +57,12 @@ int main()
         //input
         inputs = man.processInput(window);
 
-        glm::vec2 camMove = glm::vec2(0, 0);
-        if (inputs.UP)
-        {
-            camMove.y = -1;
-        }
-        if (inputs.DOWN)
-        {
-            camMove.y = 1;
-        }
-        if (inputs.LEFT)
-        {
-            camMove.x = -1;
-        }
-        if (inputs.RIGHT)
-        {
-            camMove.x = 1;
-        }
+        player.Move(inputs);
 
-        cam.Move(camMove);
+        cam.Move(glm::vec2((player.pos.x - cam.pos.x)/10, (player.pos.y - cam.pos.y)/10));
 
         //rendering
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glm::mat4 projection = cam.GetProjection(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -86,12 +76,12 @@ int main()
             {
                 if (dungeon.grid[x][y] == 1)
                 {
-                    renderer.SetTile(glm::vec2(0, 0), 4);
+                    renderer.SetTile(glm::vec2(2, 3), 4);
                     renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
-                }// else {
-                //     renderer.SetTile(glm::vec2(1, 0), 4);
-                //     renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
-                // }
+                } else if (dungeon.grid[x][y] == 2) {
+                    renderer.SetTile(RuleTile::GetTile(glm::vec2(x, y), &dungeon.grid), 4);
+                    renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
+                }
             }
         }
 
@@ -101,7 +91,8 @@ int main()
         // }
 
 
-
+        renderer.SetTile(glm::vec2(0, 0), 4);
+        renderer.DrawSprite(player.pos, glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
 
 
 

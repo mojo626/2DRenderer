@@ -440,7 +440,7 @@ class DungeonGen {
                 }
             }
 
-            glm::vec2 gridDimensions = glm::vec2((bottomRight.x - topLeft.x)/gridSize, (bottomRight.y - topLeft.y)/gridSize);
+            glm::vec2 gridDimensions = glm::vec2((bottomRight.x - topLeft.x)/gridSize + 4, (bottomRight.y - topLeft.y)/gridSize + 4);
 
             for (int x = 0; x < gridDimensions.x; x++)
             {
@@ -456,8 +456,8 @@ class DungeonGen {
             for (int i = 0; i < mainRooms.size(); i++)
             {
                 Room newRoom = mainRooms[i];
-                newRoom.pos.x -= topLeft.x;
-                newRoom.pos.y -= topLeft.y;
+                newRoom.pos.x -= topLeft.x - 2*gridSize;
+                newRoom.pos.y -= topLeft.y - 2*gridSize;
                 dungeon.mainRooms.push_back(newRoom);
                 for (int x = 0; x < mainRooms[i].size.x/gridSize; x++)
                 {
@@ -471,8 +471,8 @@ class DungeonGen {
             for (int i = 0; i < hallwayRooms.size(); i++)
             {
                 Room newRoom = hallwayRooms[i];
-                newRoom.pos.x -= topLeft.x;
-                newRoom.pos.y -= topLeft.y;
+                newRoom.pos.x -= topLeft.x - 2*gridSize;
+                newRoom.pos.y -= topLeft.y - 2*gridSize;
                 dungeon.hallwayRooms.push_back(newRoom);
                 for (int x = 0; x < hallwayRooms[i].size.x/gridSize; x++)
                 {
@@ -493,8 +493,8 @@ class DungeonGen {
                     vertical = true;
                 }
 
-                glm::vec2 p1 = glm::vec2(floor((hallways[i].x - topLeft.x)/gridSize), floor((hallways[i].y - topLeft.y)/gridSize));
-                glm::vec2 p2 = glm::vec2(floor((hallways[i].z - topLeft.x)/gridSize), floor((hallways[i].w - topLeft.y)/gridSize));
+                glm::vec2 p1 = glm::vec2(floor((hallways[i].x - topLeft.x  + 2*gridSize)/gridSize), floor((hallways[i].y - topLeft.y + 2*gridSize)/gridSize));
+                glm::vec2 p2 = glm::vec2(floor((hallways[i].z - topLeft.x + 2*gridSize)/gridSize), floor((hallways[i].w - topLeft.y + 2*gridSize)/gridSize));
 
                 if (!vertical)
                 {
@@ -535,6 +535,20 @@ class DungeonGen {
                     }
                 }
 
+            }
+
+            for (int x = 1; x < dungeon.grid.size() - 1; x++)
+            {
+                for (int y = 1; y < dungeon.grid[0].size() - 1; y++)
+                {
+                    if (dungeon.grid[x][y] != 1 && (dungeon.grid[x + 1][y] == 1 || dungeon.grid[x - 1][y] == 1 || dungeon.grid[x][y + 1] == 1 || dungeon.grid[x][y - 1] == 1 ))
+                    {
+                        Set2DVector(&dungeon.grid, x, y, 2);
+                    } else if (dungeon.grid[x][y] != 1 && (dungeon.grid[x + 1][y + 1] == 1 || dungeon.grid[x + 1][y - 1] == 1 || dungeon.grid[x - 1][y - 1] == 1 || dungeon.grid[x - 1][y + 1] == 1 ))
+                    {
+                        Set2DVector(&dungeon.grid, x, y, 2);
+                    }
+                }
             }
             
 

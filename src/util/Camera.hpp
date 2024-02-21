@@ -5,16 +5,16 @@
 #include <glad/glad.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
+#include "WindowManager.hpp"
 
 class Camera {
     public:
         float zoom;
         glm::vec2 pos;
         float speed;
-        Camera(float zoom, float speed)
+        Camera(float zoom)
         {
             this->zoom = zoom;
-            this->speed = speed;
             pos = glm::vec2(0, 0);
         }
 
@@ -26,12 +26,12 @@ class Camera {
         //input from 0-1
         void Move(glm::vec2 move)
         {
-            this->pos += move * speed;
+            this->pos += move;
         }
 
         glm::mat4 GetProjection(int WINDOW_WIDTH, int WINDOW_HEIGHT)
         {
-            return glm::ortho(this->pos.x, this->pos.x + zoom * WINDOW_WIDTH, this->pos.y + zoom * WINDOW_HEIGHT, this->pos.y, -1.0f, 1.0f);
+            return glm::ortho(this->pos.x - WINDOW_WIDTH/2*zoom, this->pos.x + zoom * WINDOW_WIDTH - WINDOW_WIDTH/2*zoom, this->pos.y + zoom * WINDOW_HEIGHT - WINDOW_HEIGHT/2*zoom, this->pos.y - WINDOW_HEIGHT/2*zoom, -1.0f, 1.0f);
         }
 };
 
