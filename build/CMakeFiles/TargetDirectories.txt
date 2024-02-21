@@ -20,3 +20,10 @@
 /Users/ben/Repositories/2DRenderer/build/lib/glfw/src/CMakeFiles/install.dir
 /Users/ben/Repositories/2DRenderer/build/lib/glfw/src/CMakeFiles/install/local.dir
 /Users/ben/Repositories/2DRenderer/build/lib/glfw/src/CMakeFiles/install/strip.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/enet.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/edit_cache.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/rebuild_cache.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/list_install_components.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/install.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/install/local.dir
+/Users/ben/Repositories/2DRenderer/build/lib/enet/CMakeFiles/install/strip.dir

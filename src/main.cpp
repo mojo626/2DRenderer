@@ -14,6 +14,8 @@
 #include "util/Camera.hpp"
 #include "util/RuleTile.hpp"
 #include "util/Player.hpp"
+#include <enet/enet.h>
+#include "util/NetworkManager.hpp"
 
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
@@ -51,9 +53,14 @@ int main()
     Camera cam(0.15);
     cam.SetPos(player.pos);
 
+    bool isServer = false;
+    NetworkManager networkMan(isServer);
+
 
     while(!glfwWindowShouldClose(window))
     {
+        networkMan.Update();
+
         //input
         inputs = man.processInput(window);
 
@@ -102,5 +109,6 @@ int main()
     }
 
     glfwTerminate();
+    networkMan.Disconnect();
     return 0;
 }

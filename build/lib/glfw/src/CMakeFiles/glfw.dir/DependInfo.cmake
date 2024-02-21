@@ -31,8 +31,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ben/Repositories/2DRenderer/lib/glfw/src/window.c" "lib/glfw/src/CMakeFiles/glfw.dir/window.c.o" "gcc" "lib/glfw/src/CMakeFiles/glfw.dir/window.c.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

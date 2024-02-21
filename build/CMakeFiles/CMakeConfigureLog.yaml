@@ -1400,3 +1400,382 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:9 (check_function_exists)"
+    checks:
+      - "Looking for fcntl"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_FCNTL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_ee32e/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_ee32e.dir/build.make CMakeFiles/cmTC_ee32e.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA'
+        Building C object CMakeFiles/cmTC_ee32e.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fcntl -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_ee32e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ee32e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ee32e.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA/CheckFunctionExists.c
+        Linking C executable cmTC_ee32e
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee32e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fcntl -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ee32e.dir/CheckFunctionExists.c.o -o cmTC_ee32e 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLvfbA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:10 (check_function_exists)"
+    checks:
+      - "Looking for poll"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_POLL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e3a5a/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e3a5a.dir/build.make CMakeFiles/cmTC_e3a5a.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9'
+        Building C object CMakeFiles/cmTC_e3a5a.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=poll -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_e3a5a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e3a5a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e3a5a.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9/CheckFunctionExists.c
+        Linking C executable cmTC_e3a5a
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3a5a.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=poll -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e3a5a.dir/CheckFunctionExists.c.o -o cmTC_e3a5a 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-krKyT9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:11 (check_function_exists)"
+    checks:
+      - "Looking for getaddrinfo"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_GETADDRINFO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_a028e/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_a028e.dir/build.make CMakeFiles/cmTC_a028e.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi'
+        Building C object CMakeFiles/cmTC_a028e.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getaddrinfo -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_a028e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a028e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a028e.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi/CheckFunctionExists.c
+        Linking C executable cmTC_a028e
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a028e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getaddrinfo -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a028e.dir/CheckFunctionExists.c.o -o cmTC_a028e 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-CdaKbi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:12 (check_function_exists)"
+    checks:
+      - "Looking for getnameinfo"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_GETNAMEINFO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_163ed/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_163ed.dir/build.make CMakeFiles/cmTC_163ed.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7'
+        Building C object CMakeFiles/cmTC_163ed.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getnameinfo -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_163ed.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_163ed.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_163ed.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7/CheckFunctionExists.c
+        Linking C executable cmTC_163ed
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_163ed.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getnameinfo -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_163ed.dir/CheckFunctionExists.c.o -o cmTC_163ed 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-1PN2D7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:13 (check_function_exists)"
+    checks:
+      - "Looking for gethostbyname_r"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_GETHOSTBYNAME_R"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_25c62/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_25c62.dir/build.make CMakeFiles/cmTC_25c62.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK'
+        Building C object CMakeFiles/cmTC_25c62.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname_r -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_25c62.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_25c62.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_25c62.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK/CheckFunctionExists.c
+        Linking C executable cmTC_25c62
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25c62.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname_r -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_25c62.dir/CheckFunctionExists.c.o -o cmTC_25c62 
+        ld: Undefined symbols:
+          _gethostbyname_r, referenced from:
+              _main in CheckFunctionExists.c.o
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[2]: *** [CMakeFiles/cmTC_25c62.dir/build.make:100: cmTC_25c62] Error 1
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK'
+        gmake[1]: *** [Makefile:127: cmTC_25c62/fast] Error 2
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-0Y60SK'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:14 (check_function_exists)"
+    checks:
+      - "Looking for gethostbyaddr_r"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_GETHOSTBYADDR_R"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_ead7d/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_ead7d.dir/build.make CMakeFiles/cmTC_ead7d.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc'
+        Building C object CMakeFiles/cmTC_ead7d.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_ead7d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ead7d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ead7d.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc/CheckFunctionExists.c
+        Linking C executable cmTC_ead7d
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ead7d.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ead7d.dir/CheckFunctionExists.c.o -o cmTC_ead7d 
+        ld: Undefined symbols:
+          _gethostbyaddr_r, referenced from:
+              _main in CheckFunctionExists.c.o
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[2]: *** [CMakeFiles/cmTC_ead7d.dir/build.make:100: cmTC_ead7d] Error 1
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc'
+        gmake[1]: *** [Makefile:127: cmTC_ead7d/fast] Error 2
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-iu0Ywc'
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:15 (check_function_exists)"
+    checks:
+      - "Looking for inet_pton"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_INET_PTON"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_75777/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_75777.dir/build.make CMakeFiles/cmTC_75777.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv'
+        Building C object CMakeFiles/cmTC_75777.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=inet_pton -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_75777.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_75777.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_75777.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv/CheckFunctionExists.c
+        Linking C executable cmTC_75777
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75777.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=inet_pton -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_75777.dir/CheckFunctionExists.c.o -o cmTC_75777 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-cLlEuv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "lib/enet/CMakeLists.txt:16 (check_function_exists)"
+    checks:
+      - "Looking for inet_ntop"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_INET_NTOP"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_eb1ec/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_eb1ec.dir/build.make CMakeFiles/cmTC_eb1ec.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d'
+        Building C object CMakeFiles/cmTC_eb1ec.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=inet_ntop -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_eb1ec.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_eb1ec.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_eb1ec.dir/CheckFunctionExists.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d/CheckFunctionExists.c
+        Linking C executable cmTC_eb1ec
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb1ec.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=inet_ntop -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_eb1ec.dir/CheckFunctionExists.c.o -o cmTC_eb1ec 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-gfV57d'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckStructHasMember.cmake:77 (CHECK_SOURCE_COMPILES)"
+      - "lib/enet/CMakeLists.txt:17 (check_struct_has_member)"
+    checks:
+      - "Performing Test HAS_MSGHDR_FLAGS"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAS_MSGHDR_FLAGS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e05c1/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e05c1.dir/build.make CMakeFiles/cmTC_e05c1.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s'
+        Building C object CMakeFiles/cmTC_e05c1.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DHAS_MSGHDR_FLAGS  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_e05c1.dir/src.c.o -MF CMakeFiles/cmTC_e05c1.dir/src.c.o.d -o CMakeFiles/cmTC_e05c1.dir/src.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s/src.c
+        Linking C executable cmTC_e05c1
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e05c1.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e05c1.dir/src.c.o -o cmTC_e05c1 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-srwH8s'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.7/share/cmake/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "lib/enet/CMakeLists.txt:19 (check_type_size)"
+    checks:
+      - "Check size of socklen_t"
+    directories:
+      source: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5"
+      binary: "/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_HAS_SOCKLEN_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_29031/fast
+        gmake[1]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5'
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_29031.dir/build.make CMakeFiles/cmTC_29031.dir/build
+        gmake[2]: Entering directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5'
+        Building C object CMakeFiles/cmTC_29031.dir/HAS_SOCKLEN_T.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_29031.dir/HAS_SOCKLEN_T.c.o -MF CMakeFiles/cmTC_29031.dir/HAS_SOCKLEN_T.c.o.d -o CMakeFiles/cmTC_29031.dir/HAS_SOCKLEN_T.c.o -c /Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5/HAS_SOCKLEN_T.c
+        Linking C executable cmTC_29031
+        /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29031.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_29031.dir/HAS_SOCKLEN_T.c.o -o cmTC_29031 
+        gmake[2]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5'
+        gmake[1]: Leaving directory '/Users/ben/Repositories/2DRenderer/build/CMakeFiles/CMakeScratch/TryCompile-6rsba5'
+        
+      exitCode: 0
+...
