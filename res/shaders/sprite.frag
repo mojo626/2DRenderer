@@ -5,6 +5,8 @@ out vec4 color;
 uniform sampler2D image;
 uniform bool isTexture;
 uniform vec3 spriteColor;
+//x, y, z: tile coord x, tile coord y, tileset dimension in tiles
+uniform vec3 tileData;
 
 float dis = 0.015;
 
@@ -22,7 +24,7 @@ void main()
         
     } else {
         //This uses the texture if there is one
-        color = vec4(spriteColor, 1.0) * texture(image, TexCoords);
+        color = vec4(spriteColor, 1.0) * texture(image, (TexCoords + vec2(tileData.x, tileData.y))/tileData.z);
     }
     
 }  

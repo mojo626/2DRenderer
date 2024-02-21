@@ -88,6 +88,11 @@ class SpriteRenderer {
             return texture;
         }
 
+        void SetTile(glm::vec2 coords, int numTiles)
+        {
+            this->shader.setVec3("tileData", glm::vec3(coords, numTiles));
+        }
+
     private:
         Shader shader;
         unsigned int quadVAO;
@@ -97,13 +102,13 @@ class SpriteRenderer {
             unsigned int VBO;
             float vertices[] = { 
                 // pos      // tex
-                0.0f, 1.0f, 0.0f, 1.0f,
-                1.0f, 0.0f, 1.0f, 0.0f,
+                0.0f, 1.001f, 0.0f, 1.0f,
+                1.001f, 0.0f, 1.0f, 0.0f,
                 0.0f, 0.0f, 0.0f, 0.0f, 
 
-                0.0f, 1.0f, 0.0f, 1.0f,
-                1.0f, 1.0f, 1.0f, 1.0f,
-                1.0f, 0.0f, 1.0f, 0.0f
+                0.0f, 1.001f, 0.0f, 1.0f,
+                1.001f, 1.001f, 1.0f, 1.0f,
+                1.001f, 0.0f, 1.0f, 0.0f
             };
 
             glGenVertexArrays(1, &this->quadVAO);

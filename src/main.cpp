@@ -33,24 +33,50 @@ int main()
 
     spriteShader.SetMatrix4("projection", projection);
 
-    SpriteRenderer renderer = SpriteRenderer(spriteShader, NULL);
+    SpriteRenderer renderer = SpriteRenderer(spriteShader, "../res/images/tileset.png");
 
 
 
     Dungeon dungeon = DungeonGen::GenerateDungeon(100, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
 
 
+    glm::vec2 camPos;
+    float zoom = 0.1;
+    float camMove = 1;
 
+    Inputs inputs;
 
 
     while(!glfwWindowShouldClose(window))
     {
         //input
-        man.processInput(window);
+        inputs = man.processInput(window);
+
+        if (inputs.UP)
+        {
+            camPos.y -= camMove;
+        }
+        if (inputs.DOWN)
+        {
+            camPos.y += camMove;
+        }
+        if (inputs.LEFT)
+        {
+            camPos.x -= camMove;
+        }
+        if (inputs.RIGHT)
+        {
+            camPos.x += camMove;
+        }
 
         //rendering
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        glm::mat4 projection = glm::ortho(camPos.x, camPos.x + zoom * WINDOW_WIDTH, 
+        camPos.y + zoom * WINDOW_HEIGHT, camPos.y, -1.0f, 1.0f);
+
+        spriteShader.SetMatrix4("projection", projection);
         
 
         for (int x = 0; x < dungeon.grid.size(); x++)
@@ -59,8 +85,12 @@ int main()
             {
                 if (dungeon.grid[x][y] == 1)
                 {
-                    renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(0.0f, 0.0f, 1.0f));
-                }
+                    renderer.SetTile(glm::vec2(0, 0), 4);
+                    renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
+                }// else {
+                //     renderer.SetTile(glm::vec2(1, 0), 4);
+                //     renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
+                // }
             }
         }
 

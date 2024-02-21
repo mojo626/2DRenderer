@@ -4,6 +4,15 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <vector>
+
+class Inputs {
+    public:
+        bool LEFT = false;
+        bool RIGHT = false;
+        bool UP = false;
+        bool DOWN = false;
+};
 
 class WindowManager {
     public:
@@ -54,10 +63,27 @@ class WindowManager {
         }
 
         //process input for window
-        void processInput(GLFWwindow *window)
+        Inputs processInput(GLFWwindow *window)
         {
+            Inputs inputs;
+
             if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
                 glfwSetWindowShouldClose(window, true);
+                
+            if(glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+                inputs.UP = true;
+            
+            if(glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+                inputs.DOWN = true;
+
+            if(glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+                inputs.LEFT = true;
+
+            if(glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+                inputs.RIGHT = true;
+
+
+            return inputs;
         }
 
     private:
