@@ -81,8 +81,8 @@ CMakeFiles/game.dir/includes/glad.c.o: /Users/ben/Repositories/2DRenderer/includ
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/wait.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/ben/Repositories/2DRenderer/includes/KHR/khrplatform.h \
   /Users/ben/Repositories/2DRenderer/includes/glad/glad.h
 
@@ -834,12 +834,12 @@ CMakeFiles/game.dir/src/main.cpp.o: /Users/ben/Repositories/2DRenderer/src/main.
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wctype.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/ben/Repositories/2DRenderer/includes/KHR/khrplatform.h \
   /Users/ben/Repositories/2DRenderer/includes/glad/glad.h \
   /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h \
@@ -1318,15 +1318,15 @@ CMakeFiles/game.dir/src/util/stb_image.cpp.o: /Users/ben/Repositories/2DRenderer
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/wait.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h \
   /Users/ben/Repositories/2DRenderer/src/util/stb_image.h
 
 CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/src/util/texture.cpp \
@@ -2055,11 +2055,11 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wctype.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/ben/Repositories/2DRenderer/includes/KHR/khrplatform.h \
   /Users/ben/Repositories/2DRenderer/includes/glad/glad.h \
   /Users/ben/Repositories/2DRenderer/src/util/texture.h
@@ -2067,11 +2067,7 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Users/ben/Repositories/2DRenderer/src/util/texture.cpp:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h:
 
 /Users/ben/Repositories/2DRenderer/src/util/SpriteRenderer.hpp:
 
@@ -2131,6 +2127,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_vec3.inl:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h:
+
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_quat.inl:
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_mat4x4.inl:
@@ -2152,6 +2150,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/func_exponential.inl:
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/func_common.inl:
+
+/Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/compute_common.hpp:
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/_vectorize.hpp:
 
@@ -2233,6 +2233,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/ext/matrix_double4x4.hpp:
 
+/Users/ben/Repositories/2DRenderer/lib/glm/glm/ext/matrix_double4x3_precision.hpp:
+
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_mat2x4.inl:
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/ext/matrix_double4x3.hpp:
@@ -2303,19 +2305,15 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h:
 
-/Users/ben/Repositories/2DRenderer/lib/glm/glm/ext/matrix_double4x3_precision.hpp:
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_zero.h:
 
-/Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/compute_common.hpp:
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/strong_order.h:
 
-/Users/ben/Repositories/2DRenderer/lib/glm/glm/gtc/epsilon.inl:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/signal.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h:
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/min_max_result.h:
 
@@ -2367,8 +2365,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_zero.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/atomic:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_set.h:
@@ -2408,8 +2404,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wctype.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/version:
 
@@ -2677,6 +2671,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/ext/vector_float2.hpp:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h:
+
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/geometric.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_clamp.h:
@@ -2725,8 +2721,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
@@ -2759,10 +2753,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/view_interface.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/subrange.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/size.h:
@@ -2794,6 +2784,10 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/float.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/uses_allocator.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_constructible.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/ranges_uninitialized_algorithms.h:
 
@@ -3031,6 +3025,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tuple:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/ext/matrix_double3x2_precision.hpp:
@@ -3125,8 +3121,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/compare_partial_order_fallback.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/strong_order.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_remove_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__fwd/string_view.h:
@@ -3179,13 +3173,11 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/month.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/day.h:
 
@@ -3204,12 +3196,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/void_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
-
-/Users/ben/Repositories/2DRenderer/src/util/texture.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/types.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_swap_ranges.h:
 
@@ -3433,12 +3419,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_constructible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/shared_ptr.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_copy_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
@@ -3501,6 +3481,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
@@ -3532,16 +3514,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uint16_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/identity.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int8_t.h:
-
-/Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_mat3x3.inl:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_mat2x3.inl:
 
@@ -3598,6 +3570,14 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_mat2x2.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwchar:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
 
@@ -3687,6 +3667,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rune_t.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/endian.h:
@@ -3749,14 +3731,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_locale.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwchar:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ucontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_symbol_aliasing.h:
@@ -3766,6 +3740,10 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Users/ben/Repositories/2DRenderer/lib/glm/glm/vec4.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rsize_t.h:
+
+/Users/ben/Repositories/2DRenderer/lib/glm/glm/gtc/epsilon.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/signal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/resource.h:
 
@@ -3790,6 +3768,12 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/generate.h:
+
+/Users/ben/Repositories/2DRenderer/lib/glm/glm/detail/type_mat3x3.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fd_clr.h:
 
@@ -3825,6 +3809,10 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_same.h:
 
+/Users/ben/Repositories/2DRenderer/src/util/texture.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/types.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_va_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
@@ -3854,6 +3842,10 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctermid.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h:
 
@@ -3889,10 +3881,6 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_generate_n.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_time.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_binary_search.h:
@@ -3922,6 +3910,10 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/unreachable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/machine/_structs.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/identity.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_mcontext.h:
 
@@ -3953,9 +3945,17 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/view_interface.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstring:
 

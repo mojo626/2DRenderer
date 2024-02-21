@@ -1354,18 +1354,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -2729,18 +2729,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -4110,18 +4110,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -4910,18 +4910,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -6284,18 +6284,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -7083,18 +7083,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/context.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -7882,18 +7882,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -8681,18 +8681,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/init.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -9480,18 +9480,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/input.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -10280,18 +10280,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -11654,18 +11654,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -12453,18 +12453,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -13252,18 +13252,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -14051,18 +14051,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -14850,18 +14850,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -15649,18 +15649,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -16448,18 +16448,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -17248,18 +17248,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -18047,18 +18047,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -18846,18 +18846,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
@@ -19645,18 +19645,18 @@ lib/glfw/src/CMakeFiles/glfw.dir/window.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/rich_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/session.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xpc/xpc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/ptrauth.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/emmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mm_malloc.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/mmintrin.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/ptrauth.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/xmmintrin.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/include/GLFW/glfw3.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_joystick.h
  /Users/ben/Repositories/2DRenderer/lib/glfw/src/cocoa_platform.h
