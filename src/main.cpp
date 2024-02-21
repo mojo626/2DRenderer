@@ -11,6 +11,7 @@
 #include <ctime>
 #include "util/Line.hpp"
 #include "util/emst.hpp"
+#include "util/Camera.hpp"
 
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
@@ -40,9 +41,7 @@ int main()
     Dungeon dungeon = DungeonGen::GenerateDungeon(100, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
 
 
-    glm::vec2 camPos;
-    float zoom = 0.1;
-    float camMove = 1;
+    Camera cam(0.3, 1);
 
     Inputs inputs;
 
@@ -52,29 +51,31 @@ int main()
         //input
         inputs = man.processInput(window);
 
+        glm::vec2 camMove = glm::vec2(0, 0);
         if (inputs.UP)
         {
-            camPos.y -= camMove;
+            camMove.y = -1;
         }
         if (inputs.DOWN)
         {
-            camPos.y += camMove;
+            camMove.y = 1;
         }
         if (inputs.LEFT)
         {
-            camPos.x -= camMove;
+            camMove.x = -1;
         }
         if (inputs.RIGHT)
         {
-            camPos.x += camMove;
+            camMove.x = 1;
         }
+
+        cam.Move(camMove);
 
         //rendering
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glm::mat4 projection = glm::ortho(camPos.x, camPos.x + zoom * WINDOW_WIDTH, 
-        camPos.y + zoom * WINDOW_HEIGHT, camPos.y, -1.0f, 1.0f);
+        glm::mat4 projection = cam.GetProjection(WINDOW_WIDTH, WINDOW_HEIGHT);
 
         spriteShader.SetMatrix4("projection", projection);
         
