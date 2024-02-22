@@ -16,9 +16,14 @@
 #include "util/Player.hpp"
 #include <enet/enet.h>
 #include "util/NetworkManager.hpp"
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
 
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
 
 int main()
 {
@@ -60,6 +65,11 @@ int main()
 
     while(!glfwWindowShouldClose(window))
     {
+        // update delta deltaTime
+        float currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
         networkMan.Update();
 
         //input
@@ -74,6 +84,14 @@ int main()
         //rendering
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        ImGui::Begin("Another Window");   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked
+        ImGui::Text("%.3fms  %.1ffps", deltaTime*1000, 1/deltaTime);
+        ImGui::End();
 
         glm::mat4 projection = cam.GetProjection(WINDOW_WIDTH, WINDOW_HEIGHT);
 
@@ -104,7 +122,8 @@ int main()
             renderer.DrawSprite(x.second->getPos(), glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
         }
 
-
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
         //check events and swap buffers
         glfwSwapBuffers(window);

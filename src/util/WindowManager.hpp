@@ -5,6 +5,9 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <vector>
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
 
 class Inputs {
     public:
@@ -52,6 +55,16 @@ class WindowManager {
                 std::cout << "Failed to initialize GLAD" << std::endl;
                 return NULL;
             }    
+
+            // Setup Dear ImGui context
+            IMGUI_CHECKVERSION();
+            ImGui::CreateContext();
+            ImGuiIO& io = ImGui::GetIO();
+
+            ImGui::StyleColorsDark();
+
+            ImGui_ImplGlfw_InitForOpenGL(window, true);
+            ImGui_ImplOpenGL3_Init("#version 330");
 
             //tell openGL size of viewport
             glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);

@@ -1010,6 +1010,11 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/ben/Repositories/2DRenderer/src/util/texture.h \
   /Users/ben/Repositories/2DRenderer/src/util/stb_image.h \
   /Users/ben/Repositories/2DRenderer/src/util/WindowManager.hpp \
+  /Users/ben/Repositories/2DRenderer/lib/imgui/imgui.h \
+  /Users/ben/Repositories/2DRenderer/lib/imgui/imconfig.h \
+  /Users/ben/Repositories/2DRenderer/lib/imgui/backends/imgui_impl_glfw.h \
+  /Users/ben/Repositories/2DRenderer/lib/imgui/backends/imgui_impl_opengl3.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/TargetConditionals.h \
   /Users/ben/Repositories/2DRenderer/src/DungeonGen/DungeonGen.hpp \
   /Users/ben/Repositories/2DRenderer/src/DungeonGen/../util/delaunator.hpp \
   /Users/ben/Repositories/2DRenderer/src/DungeonGen/../util/Line.hpp \
