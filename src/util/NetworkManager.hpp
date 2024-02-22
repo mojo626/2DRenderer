@@ -33,7 +33,7 @@ class Client {
         std::map<int, ClientData*> client_map;
         int CLIENT_ID = 0;
         Client(){}
-        Client(int port) {
+        Client(int port, char* ip) {
             if(enet_initialize() != 0)
             {
                 fprintf(stderr, "An error occurred while initializing ENet!\n");
@@ -47,7 +47,7 @@ class Client {
                 fprintf(stderr, "An error occurred while trying to create an ENet client host!\n");
             }
 
-            enet_address_set_host(&address, "127.0.0.1");
+            enet_address_set_host(&address, ip);
             address.port = port;
 
             peer = enet_host_connect(client, &address, 1, 0);
@@ -60,7 +60,7 @@ class Client {
             if(enet_host_service(client, &event, 3000) > 0 &&
                 event.type == ENET_EVENT_TYPE_CONNECT)
             {
-                puts("Connection to 127.0.0.1:7777 succeeded.");
+                puts("Connection to server succeeded.");
 
                 SendPacket(peer, "2|TestName");
             }
@@ -74,7 +74,7 @@ class Client {
 
         void SendPos(glm::vec2 pos)
         {
-            SendPacket(peer, ("1|" + std::to_string((int)round(pos.x)) + " " + std::to_string((int)round(pos.y))).c_str());
+            SendPacket(peer, ("1|" + std::to_string(pos.x) + " " + std::to_string(pos.y)).c_str());
         }
 
         void Update() {
@@ -277,7 +277,7 @@ class Server {
 
         void SendPos(glm::vec2 pos)
         {
-            BroadcastPacket(server, ("1|0|" + std::to_string((int)round(pos.x)) + " " + std::to_string((int)round(pos.y))).c_str());
+            BroadcastPacket(server, ("1|0|" + std::to_string(pos.x) + " " + std::to_string(pos.y)).c_str());
         }
 
         void ParseData(ENetHost* server, int id, char* data)
@@ -326,14 +326,14 @@ class NetworkManager {
         bool isServer = false;
         Server server;
         Client client;
-        NetworkManager(bool isServer)
+        NetworkManager(bool isServer, char* ip)
         {
             this->isServer = isServer;
             if (isServer)
             {
                 this->server = Server(7777);
             } else {
-                this->client = Client(7777);
+                this->client = Client(7777, ip);
             }
             
         }

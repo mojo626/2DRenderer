@@ -63,6 +63,7 @@ int main()
     
 
     bool done = false;
+    char ip[128] = "127.0.0.1";
     while (!done)
     {
         //rendering
@@ -82,6 +83,7 @@ int main()
         {
             isServer = false;
         }
+        ImGui::InputText("IP Address (only if client)", ip, IM_ARRAYSIZE(ip));
         done = ImGui::Button("Begin", ImVec2(80, 20));
         ImGui::End();
 
@@ -94,7 +96,7 @@ int main()
         glfwPollEvents();    
     }
 
-    NetworkManager networkMan(isServer);
+    NetworkManager networkMan(isServer, ip);
 
     while(!glfwWindowShouldClose(window))
     {
