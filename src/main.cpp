@@ -57,6 +57,7 @@ int main()
     NetworkManager networkMan(isServer);
 
 
+
     while(!glfwWindowShouldClose(window))
     {
         networkMan.Update();
@@ -65,6 +66,8 @@ int main()
         inputs = man.processInput(window);
 
         player.Move(inputs);
+
+        networkMan.SendPos(player.pos);
 
         cam.Move(glm::vec2((player.pos.x - cam.pos.x)/10, (player.pos.y - cam.pos.y)/10));
 
@@ -92,14 +95,14 @@ int main()
             }
         }
 
-        // for (int i = 0; i < dungeon.mainRooms.size(); i++)
-        // {
-        //     renderer.DrawSprite(dungeon.mainRooms[i].pos, dungeon.mainRooms[i].size, 0.0f, glm::vec3(1.0f, 0.0f, 0.0f));
-        // }
-
 
         renderer.SetTile(glm::vec2(0, 0), 4);
         renderer.DrawSprite(player.pos, glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
+
+        for (auto const& x : networkMan.GetPlayers())
+        {
+            renderer.DrawSprite(x.second->getPos(), glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
+        }
 
 
 

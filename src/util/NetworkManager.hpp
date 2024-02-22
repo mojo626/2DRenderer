@@ -33,7 +33,7 @@ class Client {
         std::map<int, ClientData*> client_map;
         int CLIENT_ID = 0;
         Client(){}
-        Client(int a) {
+        Client(int port) {
             if(enet_initialize() != 0)
             {
                 fprintf(stderr, "An error occurred while initializing ENet!\n");
@@ -48,7 +48,7 @@ class Client {
             }
 
             enet_address_set_host(&address, "127.0.0.1");
-            address.port = 7777;
+            address.port = port;
 
             peer = enet_host_connect(client, &address, 1, 0);
             if(peer == NULL)
@@ -57,7 +57,7 @@ class Client {
             }
 
 
-            if(enet_host_service(client, &event, 5000) > 0 &&
+            if(enet_host_service(client, &event, 3000) > 0 &&
                 event.type == ENET_EVENT_TYPE_CONNECT)
             {
                 puts("Connection to 127.0.0.1:7777 succeeded.");
@@ -74,7 +74,7 @@ class Client {
 
         void SendPos(glm::vec2 pos)
         {
-            SendPacket(peer, ("1|" + std::to_string(pos.x) + "," + std::to_string(pos.y)).c_str());
+            SendPacket(peer, ("1|" + std::to_string((int)round(pos.x)) + " " + std::to_string((int)round(pos.y))).c_str());
         }
 
         void Update() {
@@ -84,10 +84,12 @@ class Client {
                 {
                     case ENET_EVENT_TYPE_RECEIVE:
                         ParseData((char *)event.packet->data); // Parse the receiving data.
+                        
                         enet_packet_destroy(event.packet);
                         break;
                 }
             }
+            
         }
 
         // A simple way to send packets to a peer
@@ -113,9 +115,10 @@ class Client {
             // Will store the id of the client that is sending the data
             int id;
 
+            std::cout << data << std::endl;
             // Get first two numbers from the data (data_type and id) and but them in their respective variables
-            sscanf(data,"%d|%d", &data_type, &id);
-
+            sscanf(data, "%d|%d", &data_type, &id);
+             
             // Switch between the different data_types
             switch(data_type)
             {
@@ -123,7 +126,7 @@ class Client {
                     if (id != CLIENT_ID) {
                         float xPos = 0;
                         float yPos = 0;
-                        sscanf(data, "%*d|%*d|%d,%d", xPos, yPos);
+                        sscanf(data, "%*d|%*d|%f %f", &xPos, &yPos);
 
                         client_map[id]->SetPos(glm::vec2(xPos, yPos));
                     }
@@ -143,6 +146,7 @@ class Client {
                     CLIENT_ID = id; // Set our id to the received id.
                     break;
             }
+            
         }
 
         void Disconnect() {
@@ -195,6 +199,8 @@ class Server {
             {
                 printf("An error occurred while trying to create an ENet server host.");
             }
+
+            std::cout << "Server has been created" << std::endl;
         }
 
         void GetEvents()
@@ -211,6 +217,13 @@ class Server {
                         event.peer -> address.host,
                         event.peer -> address.port);
 
+                        for(auto const& x : client_map)
+                        {
+                            char send_data[1024] = {'\0'};
+                            sprintf(send_data, "2|%d|%s", x.first, x.second->GetUsername().c_str());
+                            BroadcastPacket(server, send_data);
+                        }
+
 
                         newPlayerID++;
                         client_map[newPlayerID] = new ClientData(newPlayerID);
@@ -219,6 +232,8 @@ class Server {
                         char data_to_send[126] = {'\0'};
                         sprintf(data_to_send, "3|%d", newPlayerID);
                         SendPacket(event.peer, data_to_send);
+
+                        SendPacket(event.peer, "2|0|Server");
                         break;
                     }
                     case ENET_EVENT_TYPE_RECEIVE: 
@@ -261,6 +276,11 @@ class Server {
             enet_peer_send(peer, 0, packet);
         }
 
+        void SendPos(glm::vec2 pos)
+        {
+            BroadcastPacket(server, ("1|0|" + std::to_string((int)round(pos.x)) + " " + std::to_string((int)round(pos.y))).c_str());
+        }
+
         void ParseData(ENetHost* server, int id, char* data)
         {
 
@@ -271,6 +291,12 @@ class Server {
             {
                 case 1:
                 {
+                    float xPos = 0;
+                    float yPos = 0;
+                    sscanf(data, "%*d|%f %f", &xPos, &yPos);
+
+                    client_map[id]->SetPos(glm::vec2(xPos, yPos));
+
                     char msg[80];
                     sscanf(data, "%*d|%[^\n]", &msg);
 
@@ -307,20 +333,46 @@ class NetworkManager {
             if (isServer)
             {
                 this->server = Server(7777);
+            } else {
+                this->client = Client(7777);
             }
-            this->client = Client(1);
+            
         }
 
         void Update() {
-            client.Update();
             if (isServer)
             {
                 server.GetEvents();
-            } 
+            } else {
+                client.Update();
+            }
         }
 
         void Disconnect() {
-            client.Disconnect();
+            if (!isServer)
+            {
+                client.Disconnect();
+            }
+            
+        }
+
+        void SendPos(glm::vec2 pos)
+        {
+            if (isServer)
+            {
+                server.SendPos(pos);
+            } else {
+                client.SendPos(pos);
+            }
+            
+        }
+
+        std::map<int, ClientData*> GetPlayers() {
+            if (isServer) {
+                return server.client_map;
+            } else {
+                return client.client_map;
+            }
         }
 };
 
