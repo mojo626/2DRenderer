@@ -322,6 +322,27 @@ OpenGLRenderer_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OpenGLRenderer_SOURCE_DIR:STATIC=/Users/ben/Repositories/2DRenderer
 
+//Build the unit tests
+Random_BuildTests:BOOL=ON
+
+//Value Computed by CMake
+effolkronium_random_BINARY_DIR:STATIC=/Users/ben/Repositories/2DRenderer/build/lib/random
+
+//Value Computed by CMake
+effolkronium_random_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+effolkronium_random_SOURCE_DIR:STATIC=/Users/ben/Repositories/2DRenderer/lib/random
+
+//Value Computed by CMake
+effolkronium_random_test_BINARY_DIR:STATIC=/Users/ben/Repositories/2DRenderer/build/lib/random/test
+
+//Value Computed by CMake
+effolkronium_random_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+effolkronium_random_test_SOURCE_DIR:STATIC=/Users/ben/Repositories/2DRenderer/lib/random/test
+
 //Value Computed by CMake
 enet_BINARY_DIR:STATIC=/Users/ben/Repositories/2DRenderer/build/lib/enet
 
@@ -464,7 +485,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

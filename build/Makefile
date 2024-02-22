@@ -226,6 +226,45 @@ enet/fast:
 	$(MAKE) $(MAKESILENT) -f lib/enet/CMakeFiles/enet.dir/build.make lib/enet/CMakeFiles/enet.dir/build
 .PHONY : enet/fast
 
+#=============================================================================
+# Target rules for targets named random_static_test
+
+# Build rule for target.
+random_static_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 random_static_test
+.PHONY : random_static_test
+
+# fast build rule for target.
+random_static_test/fast:
+	$(MAKE) $(MAKESILENT) -f lib/random/test/CMakeFiles/random_static_test.dir/build.make lib/random/test/CMakeFiles/random_static_test.dir/build
+.PHONY : random_static_test/fast
+
+#=============================================================================
+# Target rules for targets named random_thread_local_test
+
+# Build rule for target.
+random_thread_local_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 random_thread_local_test
+.PHONY : random_thread_local_test
+
+# fast build rule for target.
+random_thread_local_test/fast:
+	$(MAKE) $(MAKESILENT) -f lib/random/test/CMakeFiles/random_thread_local_test.dir/build.make lib/random/test/CMakeFiles/random_thread_local_test.dir/build
+.PHONY : random_thread_local_test/fast
+
+#=============================================================================
+# Target rules for targets named random_local_test
+
+# Build rule for target.
+random_local_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 random_local_test
+.PHONY : random_local_test
+
+# fast build rule for target.
+random_local_test/fast:
+	$(MAKE) $(MAKESILENT) -f lib/random/test/CMakeFiles/random_local_test.dir/build.make lib/random/test/CMakeFiles/random_local_test.dir/build
+.PHONY : random_local_test/fast
+
 includes/glad.o: includes/glad.c.o
 .PHONY : includes/glad.o
 
@@ -483,6 +522,9 @@ help:
 	@echo "... enet"
 	@echo "... game"
 	@echo "... glfw"
+	@echo "... random_local_test"
+	@echo "... random_static_test"
+	@echo "... random_thread_local_test"
 	@echo "... includes/glad.o"
 	@echo "... includes/glad.i"
 	@echo "... includes/glad.s"

@@ -19,17 +19,21 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+#include <random>
+#include "effolkronium/random.hpp"
 
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+
 int main()
 {
     //TODO: instead of doing this, can add seeds
     //srand((unsigned int)time(NULL));
-    srand(111);
+    //srand(111);
+    effolkronium::random_static::seed(110);
 
     WindowManager man = WindowManager();
 

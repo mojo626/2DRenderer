@@ -8,6 +8,8 @@
 #include "../util/delaunator.hpp"
 #include "../util/Line.hpp"
 #include "../util/emst.hpp"
+#include "effolkronium/random.hpp"
+
 
 class Room {
     public:
@@ -109,8 +111,8 @@ class DungeonGen {
                 room.size = glm::vec2(round(randRange(minRoomSize.x, maxRoomSize.x)/tileSize)*tileSize, round(randRange(minRoomSize.y, maxRoomSize.y)/tileSize)*tileSize);
 
                 //calculating a random point within a circle
-                float r = maxDistFromOrigin * sqrt((float)rand()/RAND_MAX);
-                float theta = ((float)rand()/RAND_MAX) * 2 * 3.141592;
+                float r = maxDistFromOrigin * sqrt(randRange(0.0f, 1.0f));
+                float theta = (randRange(0.0f, 1.0f)) * 2 * 3.141592;
                 
 
                 float x = center.x + r * cos(theta);
@@ -595,11 +597,12 @@ class DungeonGen {
         
         //return a random number between min and max
         static float randRange(float min, float max) {
-            float range = max - min;
+            // float range = max - min;
 
-            float num = (float)rand()/RAND_MAX;
+            // float num = randRange(0.0f, 1.0f);
 
-            return num * range + min;
+            // return num * range + min;
+            return effolkronium::random_static::get(min, max);
         }
 
         //get the average room size
