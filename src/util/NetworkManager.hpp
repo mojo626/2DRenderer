@@ -115,7 +115,6 @@ class Client {
             // Will store the id of the client that is sending the data
             int id;
 
-            std::cout << data << std::endl;
             // Get first two numbers from the data (data_type and id) and but them in their respective variables
             sscanf(data, "%d|%d", &data_type, &id);
              
@@ -238,11 +237,11 @@ class Server {
                     }
                     case ENET_EVENT_TYPE_RECEIVE: 
                     {
-                        printf ("A packet of length %u containing %s was received from %s on channel %u.\n",
-                            event.packet -> dataLength,
-                            event.packet -> data,
-                            event.peer -> data,
-                            event.channelID);
+                        // printf ("A packet of length %u containing %s was received from %s on channel %u.\n",
+                        //     event.packet -> dataLength,
+                        //     event.packet -> data,
+                        //     event.peer -> data,
+                        //     event.channelID);
                             /* Clean up the packet now that we're done using it. */
                             ParseData(server, static_cast<ClientData*>(event.peer->data)->GetID(), (char*)event.packet->data);
 					        enet_packet_destroy(event.packet);

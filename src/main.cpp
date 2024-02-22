@@ -28,7 +28,8 @@ float lastFrame = 0.0f;
 int main()
 {
     //TODO: instead of doing this, can add seeds
-    srand((unsigned int)time(NULL));
+    //srand((unsigned int)time(NULL));
+    srand(111);
 
     WindowManager man = WindowManager();
 
@@ -58,10 +59,42 @@ int main()
     Camera cam(0.15);
     cam.SetPos(player.pos);
 
-    bool isServer = false;
+    bool isServer = true;
+    
+
+    bool done = false;
+    while (!done)
+    {
+        //rendering
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        ImGui::Begin("Another Window");   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked
+        if (ImGui::Button("Server", ImVec2(80,20)))
+        {
+            isServer = true;
+        }
+        if (ImGui::Button("Client", ImVec2(80,20)))
+        {
+            isServer = false;
+        }
+        done = ImGui::Button("Begin", ImVec2(80, 20));
+        ImGui::End();
+
+
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
+        //check events and swap buffers
+        glfwSwapBuffers(window);
+        glfwPollEvents();    
+    }
+
     NetworkManager networkMan(isServer);
-
-
 
     while(!glfwWindowShouldClose(window))
     {
@@ -91,6 +124,7 @@ int main()
 
         ImGui::Begin("Another Window");   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked
         ImGui::Text("%.3fms  %.1ffps", deltaTime*1000, 1/deltaTime);
+        ImGui::Text(isServer ? "Server" : "Client");
         ImGui::End();
 
         glm::mat4 projection = cam.GetProjection(WINDOW_WIDTH, WINDOW_HEIGHT);
