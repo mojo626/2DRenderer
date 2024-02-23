@@ -39,17 +39,17 @@ class Dungeon {
 
 class Random {
     public:
-        int seed;
+        float seed;
         Random(int seed)
         {
             this->seed = seed;
         }
 
-        float counter = 0;
-        float Rand()
+        double Rand()
         {
-            counter += 0.1312;
-            return (((sin(seed + counter)*100000) - round(sin(seed + counter)*100000)) + 1)/2;
+            double num = (((sin(seed)*400) - round(sin(seed)*400)) + 1)/2;
+            seed = num * 2429048;
+            return num;
         }
 };
 
@@ -620,7 +620,8 @@ class DungeonGen {
             // return num * range + min;
             float range = max - min;
 
-            float num = (*rand).Rand();
+            double num = (*rand).Rand();
+            std::cout << num << std::endl;
 
             return num * range + min;
         }
