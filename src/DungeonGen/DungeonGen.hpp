@@ -39,11 +39,12 @@ class Dungeon {
 
 class DungeonGen {
     public:
-        static Dungeon GenerateDungeon(int numRooms, int gridSize, glm::vec2 maxSize, glm::vec2 minSize, int maxDistFromOrigin, glm::vec2 centerPoint, float mainRoomThresh, float percentMoreEdges) {
+        static Dungeon GenerateDungeon(int seed, int numRooms, int gridSize, glm::vec2 maxSize, glm::vec2 minSize, int maxDistFromOrigin, glm::vec2 centerPoint, float mainRoomThresh, float percentMoreEdges) {
+            std::mt19937 engine(seed);
 
             //generate random rooms
             std::cout << "Generating Random Rooms..." << std::endl;
-            std::vector<Room> rooms = DungeonGen::GenerateRandomRooms(numRooms, maxSize, minSize, maxDistFromOrigin, centerPoint, gridSize);
+            std::vector<Room> rooms = DungeonGen::GenerateRandomRooms(numRooms, maxSize, minSize, maxDistFromOrigin, centerPoint, gridSize, &engine);
 
             //seperate rooms with seperation steering behaviour
             std::cout << "Seperating Rooms..." << std::endl;
@@ -80,14 +81,14 @@ class DungeonGen {
 
             //add in some random edges for some loops in the dungeon
             std::cout << "Adding In Loops..." << std::endl;
-            std::vector<Edge> newEdges = DungeonGen::RandomEdges(lines.size(), mainRooms.size(), percentMoreEdges, edges);
+            std::vector<Edge> newEdges = DungeonGen::RandomEdges(lines.size(), mainRooms.size(), percentMoreEdges, edges, &engine);
 
             //add the newEdges to the edges
             edges.insert(edges.end(), newEdges.begin(), newEdges.end());
 
             //make the edges into straght and L shaped connections
             std::cout << "Making Paths Straight..." << std::endl;
-            std::vector<glm::vec4> newConnections = DungeonGen::GenerateStraightConnections(mainRooms, edges);
+            std::vector<glm::vec4> newConnections = DungeonGen::GenerateStraightConnections(mainRooms, edges, &engine);
 
             //get the rooms that are intersecting with the hallways
             std::cout << "Adding Rooms To Hallways..." << std::endl;
@@ -101,18 +102,18 @@ class DungeonGen {
         }
     
         //make private
-        static std::vector<Room> GenerateRandomRooms(int numRooms, glm::vec2 maxRoomSize, glm::vec2 minRoomSize, int maxDistFromOrigin, glm::vec2 center, int tileSize) {
+        static std::vector<Room> GenerateRandomRooms(int numRooms, glm::vec2 maxRoomSize, glm::vec2 minRoomSize, int maxDistFromOrigin, glm::vec2 center, int tileSize, std::mt19937 *engine) {
             std::vector<Room> rooms;
 
             for (int i = 0; i < numRooms; i++)
             {
                 Room room;
                 //getting a random size and rounding it to the grid
-                room.size = glm::vec2(round(randRange(minRoomSize.x, maxRoomSize.x)/tileSize)*tileSize, round(randRange(minRoomSize.y, maxRoomSize.y)/tileSize)*tileSize);
+                room.size = glm::vec2(round(randRange(minRoomSize.x, maxRoomSize.x, engine)/tileSize)*tileSize, round(randRange(minRoomSize.y, maxRoomSize.y, engine)/tileSize)*tileSize);
 
                 //calculating a random point within a circle
-                float r = maxDistFromOrigin * sqrt(randRange(0.0f, 1.0f));
-                float theta = (randRange(0.0f, 1.0f)) * 2 * 3.141592;
+                float r = maxDistFromOrigin * sqrt(randRange(0.0f, 1.0f, engine));
+                float theta = (randRange(0.0f, 1.0f, engine)) * 2 * 3.141592;
                 
 
                 float x = center.x + r * cos(theta);
@@ -194,9 +195,8 @@ class DungeonGen {
                 coords.push_back(mainRooms[i].middle().x);
                 coords.push_back(mainRooms[i].middle().y);
             }
-
             delaunator::Delaunator d(coords);
-
+            
             for(std::size_t i = 0; i < d.triangles.size(); i+=3) {
                 printf(
                     "Triangle points: [[%f, %f], [%f, %f], [%f, %f]]\n",
@@ -215,13 +215,13 @@ class DungeonGen {
 
                 lines.push_back(glm::vec4(d.coords[2 * d.triangles[i + 2]], d.coords[2 * d.triangles[i + 2] + 1], d.coords[2 * d.triangles[i]], d.coords[2 * d.triangles[i] + 1]));
             }
-
+            
 
             return lines;
         }
 
         //returns lines in form glm::vec4(x1, y1, x2, y2)
-        static std::vector<glm::vec4> GenerateStraightConnections(std::vector<Room> rooms, std::vector<Edge> connections)
+        static std::vector<glm::vec4> GenerateStraightConnections(std::vector<Room> rooms, std::vector<Edge> connections, std::mt19937 *engine)
         {
             std::vector<glm::vec4> newConnections;
             std::vector<glm::vec2> pos;
@@ -247,7 +247,7 @@ class DungeonGen {
 
                     newConnections.push_back(glm::vec4(pointA.x, middlePoint.y, pointB.x, middlePoint.y));
                 } else {
-                    if (randRange(0.0, 1.0) > 0.5f)
+                    if (randRange(0.0, 1.0, engine) > 0.5f)
                     {   
                         newConnections.push_back(glm::vec4(pointA.x, pointA.y, pointA.x, pointB.y));
                         newConnections.push_back(glm::vec4(pointB.x, pointB.y, pointA.x, pointB.y));
@@ -262,7 +262,7 @@ class DungeonGen {
             return newConnections;
         }
 
-        static std::vector<Edge> RandomEdges(int totalEdges, int totalRooms, float percentMore, std::vector<Edge> edges)
+        static std::vector<Edge> RandomEdges(int totalEdges, int totalRooms, float percentMore, std::vector<Edge> edges, std::mt19937 *engine)
         {
             int numEdges = round(totalEdges * percentMore);
             std::vector<Edge> newEdges;
@@ -276,8 +276,8 @@ class DungeonGen {
 
                 while (duplicate)
                 {
-                    pointA = round(randRange(0, totalRooms));
-                    pointB = round(randRange(0, totalRooms));
+                    pointA = round(randRange(0, totalRooms, engine));
+                    pointB = round(randRange(0, totalRooms, engine));
 
 
                     duplicate = false;
@@ -596,13 +596,17 @@ class DungeonGen {
 
         
         //return a random number between min and max
-        static float randRange(float min, float max) {
+        static float randRange(float min, float max, std::mt19937 *engine) {
             // float range = max - min;
 
             // float num = randRange(0.0f, 1.0f);
 
             // return num * range + min;
-            return effolkronium::random_static::get(min, max);
+            float range = max - min;
+
+            float num = (float)(*engine)()/(*engine).max();
+
+            return num * range + min;
         }
 
         //get the average room size

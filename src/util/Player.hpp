@@ -16,7 +16,7 @@ class Player {
         }
 
         //input from 0-1
-        void Move(Inputs inputs)
+        void Move(Inputs inputs, float deltaTime)
         {
             glm::vec2 camMove = glm::vec2(0, 0);
             if (inputs.UP)
@@ -36,7 +36,7 @@ class Player {
                 camMove.x = 1;
             }
 
-            this->pos += camMove * speed;
+            this->pos += camMove * speed * deltaTime;
         }
 };
 

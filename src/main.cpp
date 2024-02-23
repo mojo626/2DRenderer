@@ -33,7 +33,6 @@ int main()
     //TODO: instead of doing this, can add seeds
     //srand((unsigned int)time(NULL));
     //srand(111);
-    effolkronium::random_static::seed(110);
 
     WindowManager man = WindowManager();
 
@@ -51,14 +50,14 @@ int main()
     SpriteRenderer renderer = SpriteRenderer(spriteShader, "../res/images/tileset.png");
 
 
-
-    Dungeon dungeon = DungeonGen::GenerateDungeon(80, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
+    int seed = 110;
+    Dungeon dungeon = DungeonGen::GenerateDungeon(seed, 80, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
 
 
     
 
     Inputs inputs;
-    Player player(dungeon.mainRooms[0].middle(), 1.5);
+    Player player(dungeon.mainRooms[0].middle(), 40);
 
     Camera cam(0.15);
     cam.SetPos(player.pos);
@@ -114,7 +113,7 @@ int main()
         //input
         inputs = man.processInput(window);
 
-        player.Move(inputs);
+        player.Move(inputs, deltaTime);
 
         networkMan.SendPos(player.pos);
 
