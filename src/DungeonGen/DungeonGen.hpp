@@ -37,14 +37,30 @@ class Dungeon {
         int gridSize;
 };
 
+class Random {
+    public:
+        int seed;
+        Random(int seed)
+        {
+            this->seed = seed;
+        }
+
+        float counter = 0;
+        float Rand()
+        {
+            counter += 0.1312;
+            return (((sin(seed + counter)*100000) - round(sin(seed + counter)*100000)) + 1)/2;
+        }
+};
+
 class DungeonGen {
     public:
         static Dungeon GenerateDungeon(int seed, int numRooms, int gridSize, glm::vec2 maxSize, glm::vec2 minSize, int maxDistFromOrigin, glm::vec2 centerPoint, float mainRoomThresh, float percentMoreEdges) {
-            std::mt19937 engine(seed);
+            Random rand(seed);
 
             //generate random rooms
             std::cout << "Generating Random Rooms..." << std::endl;
-            std::vector<Room> rooms = DungeonGen::GenerateRandomRooms(numRooms, maxSize, minSize, maxDistFromOrigin, centerPoint, gridSize, &engine);
+            std::vector<Room> rooms = DungeonGen::GenerateRandomRooms(numRooms, maxSize, minSize, maxDistFromOrigin, centerPoint, gridSize, &rand);
 
             //seperate rooms with seperation steering behaviour
             std::cout << "Seperating Rooms..." << std::endl;
@@ -81,14 +97,14 @@ class DungeonGen {
 
             //add in some random edges for some loops in the dungeon
             std::cout << "Adding In Loops..." << std::endl;
-            std::vector<Edge> newEdges = DungeonGen::RandomEdges(lines.size(), mainRooms.size(), percentMoreEdges, edges, &engine);
+            std::vector<Edge> newEdges = DungeonGen::RandomEdges(lines.size(), mainRooms.size(), percentMoreEdges, edges, &rand);
 
             //add the newEdges to the edges
             edges.insert(edges.end(), newEdges.begin(), newEdges.end());
 
             //make the edges into straght and L shaped connections
             std::cout << "Making Paths Straight..." << std::endl;
-            std::vector<glm::vec4> newConnections = DungeonGen::GenerateStraightConnections(mainRooms, edges, &engine);
+            std::vector<glm::vec4> newConnections = DungeonGen::GenerateStraightConnections(mainRooms, edges, &rand);
 
             //get the rooms that are intersecting with the hallways
             std::cout << "Adding Rooms To Hallways..." << std::endl;
@@ -102,7 +118,7 @@ class DungeonGen {
         }
     
         //make private
-        static std::vector<Room> GenerateRandomRooms(int numRooms, glm::vec2 maxRoomSize, glm::vec2 minRoomSize, int maxDistFromOrigin, glm::vec2 center, int tileSize, std::mt19937 *engine) {
+        static std::vector<Room> GenerateRandomRooms(int numRooms, glm::vec2 maxRoomSize, glm::vec2 minRoomSize, int maxDistFromOrigin, glm::vec2 center, int tileSize, Random *engine) {
             std::vector<Room> rooms;
 
             for (int i = 0; i < numRooms; i++)
@@ -221,7 +237,7 @@ class DungeonGen {
         }
 
         //returns lines in form glm::vec4(x1, y1, x2, y2)
-        static std::vector<glm::vec4> GenerateStraightConnections(std::vector<Room> rooms, std::vector<Edge> connections, std::mt19937 *engine)
+        static std::vector<glm::vec4> GenerateStraightConnections(std::vector<Room> rooms, std::vector<Edge> connections, Random *engine)
         {
             std::vector<glm::vec4> newConnections;
             std::vector<glm::vec2> pos;
@@ -262,7 +278,7 @@ class DungeonGen {
             return newConnections;
         }
 
-        static std::vector<Edge> RandomEdges(int totalEdges, int totalRooms, float percentMore, std::vector<Edge> edges, std::mt19937 *engine)
+        static std::vector<Edge> RandomEdges(int totalEdges, int totalRooms, float percentMore, std::vector<Edge> edges, Random *engine)
         {
             int numEdges = round(totalEdges * percentMore);
             std::vector<Edge> newEdges;
@@ -596,7 +612,7 @@ class DungeonGen {
 
         
         //return a random number between min and max
-        static float randRange(float min, float max, std::mt19937 *engine) {
+        static float randRange(float min, float max, Random *rand) {
             // float range = max - min;
 
             // float num = randRange(0.0f, 1.0f);
@@ -604,7 +620,7 @@ class DungeonGen {
             // return num * range + min;
             float range = max - min;
 
-            float num = (float)(*engine)()/(*engine).max();
+            float num = (*rand).Rand();
 
             return num * range + min;
         }
@@ -668,8 +684,6 @@ class DungeonGen {
             return false;
         }
 
-
-        
 };
 
 
