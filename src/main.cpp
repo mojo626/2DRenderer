@@ -50,7 +50,7 @@ int main()
     SpriteRenderer renderer = SpriteRenderer(spriteShader, "../res/images/tileset.png");
 
 
-    int seed = 1203942;
+    int seed = 120342;
     Dungeon dungeon = DungeonGen::GenerateDungeon(seed, 80, 5, glm::vec2(80, 80), glm::vec2(20, 20), 80, glm::vec2(400, 300), 1.15, 0.1);
 
 

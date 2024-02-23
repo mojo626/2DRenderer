@@ -47,9 +47,29 @@ class Random {
 
         double Rand()
         {
-            double num = (((sin(seed)*400) - round(sin(seed)*400)) + 1)/2;
-            seed = num * 2429048;
+            double num = nextFloat(seed);
+            seed += 3.144321;
             return num;
+        }
+
+        int xorshift(int value) {
+            // Xorshift*32
+            // Based on George Marsaglia's work: http://www.jstatsoft.org/v08/i14/paper
+            value ^= value << 13;
+            value ^= value >> 17;
+            value ^= value << 5;
+            return value;
+        }
+
+        int nextInt(int seed) {
+            seed = xorshift(seed);
+            return seed;
+        }
+
+        float nextFloat(int seed) {
+            seed = xorshift(seed);
+            // FIXME: This should have been a seed mapped from MIN..MAX to 0..1 instead
+            return abs(((float)(seed) / 3141.592653) - round((float)(seed) / 3141.592653));
         }
 };
 
