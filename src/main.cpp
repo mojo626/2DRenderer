@@ -58,8 +58,9 @@ int main()
 
     Inputs inputs;
     Player player(dungeon.mainRooms[0].middle(), 40);
+    //Player player(glm::vec2(0, 0), 40);
 
-    Camera cam(0.15);
+    Camera cam(0.1);//0.15
     cam.SetPos(player.pos);
 
     bool isServer = true;
@@ -100,6 +101,8 @@ int main()
     }
 
     NetworkManager networkMan(isServer, ip);
+
+    int tilesetWidth = 8;
 
     while(!glfwWindowShouldClose(window))
     {
@@ -143,18 +146,18 @@ int main()
             {
                 if (dungeon.grid[x][y] == 1)
                 {
-                    renderer.SetTile(glm::vec2(2, 3), 4);
+                    renderer.SetTile(glm::vec2(2, 3), tilesetWidth);
                     renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
                 } else if (dungeon.grid[x][y] == 2) {
-                    renderer.SetTile(RuleTile::GetTile(glm::vec2(x, y), &dungeon.grid), 4);
+                    renderer.SetTile(RuleTile::GetTile(glm::vec2(x, y), &dungeon.grid), tilesetWidth);
                     renderer.DrawSprite(glm::vec2(x * 5, y * 5), glm::vec2(5, 5), 0.0f, glm::vec3(1.0f, 1.0f, 1.0f));
                 }
             }
         }
 
 
-        renderer.SetTile(glm::vec2(0, 0), 4);
-        renderer.DrawSprite(player.pos, glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
+        player.Render(deltaTime, tilesetWidth, renderer);
+        
 
         for (auto const& x : networkMan.GetPlayers())
         {

@@ -7,6 +7,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <vector>
 
 #include <glm/gtc/type_ptr.hpp>
 
@@ -88,6 +89,11 @@ public:
   void setVec3(const std::string &name, glm::vec3 value) const {
     glUniform3fv(glGetUniformLocation(ID, name.c_str()), 1,
                  (const GLfloat *)&value);
+  }
+
+  void setVec3Arr(const std::string &name, std::vector<glm::vec3> values) const {
+    glUniform3fv(glGetUniformLocation(ID, name.c_str()), values.size(),
+                 (const GLfloat *)&values[0]);
   }
 
   void SetMatrix4(const char *name, const glm::mat4 &matrix)

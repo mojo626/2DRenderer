@@ -641,7 +641,6 @@ class DungeonGen {
             float range = max - min;
 
             double num = (*rand).Rand();
-            std::cout << num << std::endl;
 
             return num * range + min;
         }
