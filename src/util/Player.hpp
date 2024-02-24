@@ -11,13 +11,17 @@ class Player {
         glm::vec2 pos;
         float speed;
         bool facingLeft = false;
+        bool moving = false;
         AnimationManager idleAnim;
+        AnimationManager walkAnim;
         Player(glm::vec2 pos, float speed)
         {
             this->pos = pos;
             this->speed = speed;
             std::vector<glm::vec2> frames = {glm::vec2(4,0), glm::vec2(5,0), glm::vec2(6,0), glm::vec2(5,0)};
             this->idleAnim = AnimationManager(frames, 0.3f);
+            std::vector<glm::vec2> frames2 = {glm::vec2(7,0), glm::vec2(4,1), glm::vec2(5,1), glm::vec2(4,1), glm::vec2(7,0), glm::vec2(6,1), glm::vec2(7,1), glm::vec2(6,1)};
+            this->walkAnim = AnimationManager(frames2, 0.08f);
         }
 
         //input from 0-1
@@ -44,11 +48,20 @@ class Player {
             }
 
             this->pos += camMove * speed * deltaTime;
+
+            moving = glm::length(camMove) > 0;
         }
 
         void Render(float deltaTime, int tilesetWidth, SpriteRenderer renderer)
         {
-            glm::vec2 frame = idleAnim.GetFrame(deltaTime);
+            glm::vec2 frame;
+            if (moving)
+            {
+                frame = walkAnim.GetFrame(deltaTime);
+            } else {
+                frame = idleAnim.GetFrame(deltaTime);
+            }
+            
             renderer.SetTile(frame, tilesetWidth);
             if (this->facingLeft)
             {
