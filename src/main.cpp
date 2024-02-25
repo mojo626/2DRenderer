@@ -30,16 +30,13 @@ float lastFrame = 0.0f;
 
 int main()
 {
-    //TODO: instead of doing this, can add seeds
-    //srand((unsigned int)time(NULL));
-    //srand(111);
 
     WindowManager man = WindowManager();
 
     GLFWwindow* window = man.init(WINDOW_WIDTH, WINDOW_HEIGHT);
     
 
-
+    //Setting up the sprite renderer
     Shader spriteShader("../res/shaders/sprite.vert", "../res/shaders/sprite.frag");
     spriteShader.use();
     glm::mat4 projection = glm::ortho(0.0f, static_cast<float>(WINDOW_WIDTH), 
@@ -116,7 +113,7 @@ int main()
         //input
         inputs = man.processInput(window);
 
-        player.Move(inputs, deltaTime);
+        player.Move(inputs, deltaTime, dungeon);
 
         networkMan.SendPos(player.pos);
 
@@ -154,6 +151,7 @@ int main()
                 }
             }
         }
+
 
 
         player.Render(deltaTime, tilesetWidth, renderer);

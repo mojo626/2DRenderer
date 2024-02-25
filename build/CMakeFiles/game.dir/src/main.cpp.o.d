@@ -1074,6 +1074,8 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/ben/Repositories/2DRenderer/src/util/RuleTile.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/Player.hpp \
   /Users/ben/Repositories/2DRenderer/src/util/AnimationManager.hpp \
+  /Users/ben/Repositories/2DRenderer/src/util/Colliders.hpp \
+  /Users/ben/Repositories/2DRenderer/src/util/../DungeonGen/DungeonGen.hpp \
   /Users/ben/Repositories/2DRenderer/lib/enet/include/enet/enet.h \
   /Users/ben/Repositories/2DRenderer/lib/enet/include/enet/unix.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/time.h \
