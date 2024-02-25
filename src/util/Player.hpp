@@ -53,9 +53,13 @@ class Player {
                 facingLeft = false;
             }
 
+            glm::vec2 xMove = glm::vec2(camMove.x, 0.0);
+            glm::vec2 yMove = glm::vec2(0.0, camMove.y);
 
+
+            //check x
             bool colliding = false;
-            this->coll.UpdateCollider(this->pos + camMove * speed * deltaTime, glm::vec2(5,5));
+            this->UpdateCollider(this->pos + xMove * speed * deltaTime);
             for (int x = 0; x < dungeon.grid.size(); x++)
             {
                 for (int y = 0; y < dungeon.grid[0].size(); y++)
@@ -73,15 +77,41 @@ class Player {
 
             if (!colliding)
             {
-                this->pos += camMove * speed * deltaTime;
+                this->pos += xMove * speed * deltaTime;   
+            }
 
-                moving = glm::length(camMove) > 0;
+            //check y
+            colliding = false;
+            this->UpdateCollider(this->pos + yMove * speed * deltaTime);
+            for (int x = 0; x < dungeon.grid.size(); x++)
+            {
+                for (int y = 0; y < dungeon.grid[0].size(); y++)
+                {
+                    if (dungeon.grid[x][y] == 2) {
+                        RectCollider wallColl(glm::vec2(x * dungeon.gridSize, y * dungeon.gridSize), glm::vec2(dungeon.gridSize, dungeon.gridSize));
+
+                        if (this->coll.RectCollide(wallColl))
+                        {
+                            colliding = true;
+                        }
+                    }
+                }
+            }
+
+            if (!colliding)
+            {
+                this->pos += yMove * speed * deltaTime;   
             }
             
 
 
+            moving = glm::length(camMove) > 0;
+            this->UpdateCollider(this->pos);
+        }
 
-            this->coll.UpdateCollider(this->pos, glm::vec2(5,5));
+        void UpdateCollider(glm::vec2 pos)
+        {
+            this->coll.UpdateCollider(pos + glm::vec2(0, 2.5), glm::vec2(5, 2.5));
         }
 
         void Render(float deltaTime, int tilesetWidth, SpriteRenderer renderer)
