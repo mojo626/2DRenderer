@@ -1105,4 +1105,5 @@ CMakeFiles/game.dir/src/main.cpp.o: \
   /Users/ben/Repositories/2DRenderer/lib/enet/include/enet/callbacks.h \
   /Users/ben/Repositories/2DRenderer/src/util/NetworkManager.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tree
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tree \
+  /Users/ben/Repositories/2DRenderer/src/util/Particles.hpp

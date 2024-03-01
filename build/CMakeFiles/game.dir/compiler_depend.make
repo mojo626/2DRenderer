@@ -3360,7 +3360,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /Users/ben/Repositories/2DRenderer/src/main.
   /Users/ben/Repositories/2DRenderer/lib/enet/include/enet/callbacks.h \
   /Users/ben/Repositories/2DRenderer/src/util/NetworkManager.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tree
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tree \
+  /Users/ben/Repositories/2DRenderer/src/util/Particles.hpp
 
 CMakeFiles/game.dir/src/util/stb_image.cpp.o: /Users/ben/Repositories/2DRenderer/src/util/stb_image.cpp \
   /Users/ben/Repositories/2DRenderer/src/util/stb_image.h \
@@ -6446,6 +6447,8 @@ CMakeFiles/game.dir/src/util/texture.cpp.o: /Users/ben/Repositories/2DRenderer/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/mach_voucher_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach_debug/ipc_info.h:
+
+/Users/ben/Repositories/2DRenderer/src/util/Particles.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/types.h:
 

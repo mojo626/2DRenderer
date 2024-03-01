@@ -21,6 +21,7 @@
 #include "imgui_impl_opengl3.h"
 #include <random>
 #include "effolkronium/random.hpp"
+#include "util/Particles.hpp"
 
 const unsigned int WINDOW_WIDTH = 800;
 const unsigned int WINDOW_HEIGHT = 600;
@@ -101,6 +102,9 @@ int main()
 
     int tilesetWidth = 8;
 
+    ParticleSystem particleSystem;
+    particleSystem.InitSystem(projection);
+
     while(!glfwWindowShouldClose(window))
     {
         // update delta deltaTime
@@ -135,6 +139,8 @@ int main()
         glm::mat4 projection = cam.GetProjection(WINDOW_WIDTH, WINDOW_HEIGHT);
 
         spriteShader.SetMatrix4("projection", projection);
+
+        
         
 
         for (int x = 0; x < dungeon.grid.size(); x++)
@@ -152,15 +158,20 @@ int main()
             }
         }
 
-
+        
 
         player.Render(deltaTime, tilesetWidth, renderer);
+
+        //render particles
+        particleSystem.SimulateParticles(deltaTime, player.pos);
         
 
         for (auto const& x : networkMan.GetPlayers())
         {
             renderer.DrawSprite(x.second->getPos(), glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
         }
+
+    
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

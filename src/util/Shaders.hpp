@@ -60,6 +60,7 @@ public:
     checkCompileErrors(fragment, "FRAGMENT");
     // shader Program
     ID = glCreateProgram();
+    std::cout << "ID: " << ID << std::endl;
     glAttachShader(ID, vertex);
     glAttachShader(ID, fragment);
     glLinkProgram(ID);
@@ -68,6 +69,8 @@ public:
     // necessary
     glDeleteShader(vertex);
     glDeleteShader(fragment);
+
+    std::cout << "succesfully read " << vertexPath << " and " << fragmentPath << std::endl;
   }
   // activate the shader
   // ------------------------------------------------------------------------
