@@ -14,19 +14,20 @@ struct Particle
     float life; //life of particle, when <0 particle is killed
 };
 
-const int maxParticles = 10000;
+const int maxParticles = 1000;
 
 class ParticleSystem {
     public:
         Particle particlesContainer[maxParticles];
         int lastUsedparticle = 0;
+        Shader shader;
 
         int FindUnusedParticle()
         {
             //look through particles until we find one that isn't used yet
             for (int i = lastUsedparticle; i < maxParticles; i++)
             {
-                if (particlesContainer[i].life < 0)
+                if (particlesContainer[i].life <= 0.0f)
                 {
                     lastUsedparticle = i;
                     return i;
@@ -36,13 +37,13 @@ class ParticleSystem {
             //if there aren't any from where we left off to the end, start at the beginning and look util where we left off
             for (int i = 0; i < lastUsedparticle; i++)
             {
-                if (particlesContainer[i].life < 0)
+                if (particlesContainer[i].life <= 0.0f)
                 {
                     lastUsedparticle = i;
                     return i;
                 }
             }
-
+            std::cout << "all particles used" << std::endl;
             //all particles are being used
             return 0;
         }
@@ -50,7 +51,7 @@ class ParticleSystem {
         //playerPos is just for testing
         void SimulateParticles(float deltaTime, glm::vec2 playerPos)
         {
-            float numNew = 10.0;
+            float numNew = 100.0;
             int newparticles = (int)(deltaTime*numNew);
             //clamp to 16ms frames so we don't spawn a lot of particles when there is a slow frame
             if (newparticles > (int)(0.016f*numNew))
@@ -72,8 +73,8 @@ class ParticleSystem {
                     if (p.life > 0.0f){
 
                         // Simulate simple physics : gravity only, no collisions
-                        p.speed += glm::vec3(0.0f,-9.81f, 0.0f) * (float)delta * 0.5f;
-                        p.pos += p.speed * (float)delta;
+                        //p.speed += glm::vec3(0.0f,-9.81f, 0.0f) * (float)delta * 0.5f;
+                        //p.pos += p.speed * (float)delta;
                         //ParticlesContainer[i].pos += glm::vec3(0.0f,10.0f, 0.0f) * (float)delta;
 
                         // Fill the GPU buffer
@@ -94,28 +95,39 @@ class ParticleSystem {
                 }
             }
 
-            //UpdateBuffers(ParticlesCount);
+            this->shader.use();
+            UpdateBuffers(ParticlesCount);
             RenderParticles(ParticlesCount);
             glBindVertexArray(0);
         }
 
-        void InitSystem(glm::mat4 projection) {
+        void InitSystem(glm::mat4 *projection) {
             this->shader = Shader("../res/shaders/particle.vert", "../res/shaders/particle.frag");
 
             this->shader.use();
 
-            this->shader.SetMatrix4("projection", projection);
+            this->shader.SetMatrix4("projection", *projection);
 
             g_particle_color_data = new int[4*maxParticles];
             g_particle_position_size_data = new int[4*maxParticles];
 
             // The VBO containing the 4 vertices of the particles.
             // Thanks to instancing, they will be shared by all particles.
+            // static const GLfloat g_vertex_buffer_data[] = {
+            // -0.5f, -0.5f, 0.0f,
+            // 0.5f, -0.5f, 0.0f,
+            // -0.5f, 0.5f, 0.0f,
+            // 0.5f, 0.5f, 0.0f,
+            // };
             static const GLfloat g_vertex_buffer_data[] = {
-            -0.5f, -0.5f, 0.0f,
-            0.5f, -0.5f, 0.0f,
-            -0.5f, 0.5f, 0.0f,
-            0.5f, 0.5f, 0.0f,
+            // positions     // colors
+            -0.05f,  0.05f,  0.0f, 
+            0.05f, -0.05f,  0.0f, 
+            -0.05f, -0.05f,  0.0f,
+
+            -0.05f,  0.05f,  0.0f, 
+            0.05f, -0.05f,  0.0f,   
+            0.05f,  0.05f,  0.0f, 
             };
             glGenBuffers(1, &billboard_vertex_buffer);
             glBindBuffer(GL_ARRAY_BUFFER, billboard_vertex_buffer);
@@ -154,7 +166,7 @@ class ParticleSystem {
 
         void RenderParticles(int ParticlesCount)
         {
-            this->shader.use();
+            
 
             // 1rst attribute buffer : vertices
             glEnableVertexAttribArray(0);
@@ -164,7 +176,7 @@ class ParticleSystem {
             3, // size
             GL_FLOAT, // type
             GL_FALSE, // normalized?
-            0, // stride
+            3 * sizeof(float), // stride
             (void*)0 // array buffer offset
             );
 
@@ -176,7 +188,7 @@ class ParticleSystem {
             4, // size : x + y + z + size => 4
             GL_FLOAT, // type
             GL_FALSE, // normalized?
-            0, // stride
+            4 * sizeof(float), // stride
             (void*)0 // array buffer offset
             );
 
@@ -188,7 +200,7 @@ class ParticleSystem {
             4, // size : r + g + b + a => 4
             GL_UNSIGNED_BYTE, // type
             GL_TRUE, // normalized? *** YES, this means that the unsigned char[4] will be accessible with a vec4 (floats) in the shader ***
-            0, // stride
+            4 * sizeof(float), // stride
             (void*)0 // array buffer offset
             );
 
@@ -206,7 +218,7 @@ class ParticleSystem {
             // This is equivalent to :
             // for(i in ParticlesCount) : glDrawArrays(GL_TRIANGLE_STRIP, 0, 4),
             // but faster.
-            glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, 4, ParticlesCount);
+            glDrawArraysInstanced(GL_TRIANGLES, 0, 6, ParticlesCount);
 
             glDisableVertexAttribArray(0);
             glDisableVertexAttribArray(1);
@@ -222,12 +234,12 @@ class ParticleSystem {
                 Particle newParticle;
                 newParticle.pos = glm::vec3(playerPos, 0);
                 newParticle.speed = glm::vec3(-1, 0, 0);
-                newParticle.life = 10.0;
+                newParticle.life = 20.0;
                 newParticle.a = 1.0;
                 newParticle.r = 1.0;
                 newParticle.g = 1.0;
-                newParticle.b = 0.0;
-                newParticle.size = 2.0f;
+                newParticle.b = 1.0;
+                newParticle.size = 20.0f;
 
 
                 particlesContainer[particleIndex] = newParticle;
@@ -236,12 +248,11 @@ class ParticleSystem {
         }
 
         private:
-            unsigned int particles_color_buffer;
-            unsigned int particles_position_buffer;
-            unsigned int billboard_vertex_buffer;
+            GLuint particles_color_buffer;
+            GLuint particles_position_buffer;
+            GLuint billboard_vertex_buffer;
             int* g_particle_color_data;
             int* g_particle_position_size_data;
-            Shader shader;
 
 };
 

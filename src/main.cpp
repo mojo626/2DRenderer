@@ -103,7 +103,7 @@ int main()
     int tilesetWidth = 8;
 
     ParticleSystem particleSystem;
-    particleSystem.InitSystem(projection);
+    particleSystem.InitSystem(&projection);
 
     while(!glfwWindowShouldClose(window))
     {
@@ -126,6 +126,7 @@ int main()
         //rendering
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
@@ -138,8 +139,10 @@ int main()
 
         glm::mat4 projection = cam.GetProjection(WINDOW_WIDTH, WINDOW_HEIGHT);
 
+        spriteShader.use();
         spriteShader.SetMatrix4("projection", projection);
-
+        particleSystem.shader.use();
+        particleSystem.shader.SetMatrix4("projection", projection);
         
         
 
@@ -159,19 +162,21 @@ int main()
         }
 
         
-
-        player.Render(deltaTime, tilesetWidth, renderer);
-
-        //render particles
-        particleSystem.SimulateParticles(deltaTime, player.pos);
+        
+        //player.Render(deltaTime, tilesetWidth, renderer);
+        
         
 
         for (auto const& x : networkMan.GetPlayers())
         {
+            renderer.SetTile(glm::vec2(4, 0), tilesetWidth);
             renderer.DrawSprite(x.second->getPos(), glm::vec2(5, 5), 0.0f, glm::vec3(1.0, 1.0, 1.0));
         }
 
-    
+        //render particles
+        particleSystem.SimulateParticles(deltaTime, player.pos);
+
+        ImGui::ShowMetricsWindow();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

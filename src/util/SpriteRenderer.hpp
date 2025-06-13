@@ -13,6 +13,7 @@ class SpriteRenderer {
     public:
         const char *filepath;
         Texture2D texture;
+        Shader shader;
         SpriteRenderer(Shader &shader, const char *file) {
             this->shader = shader;
 
@@ -108,7 +109,6 @@ class SpriteRenderer {
         }
 
     private:
-        Shader shader;
         unsigned int quadVAO;
 
         void initRendererData() {

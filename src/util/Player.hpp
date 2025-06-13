@@ -116,6 +116,7 @@ class Player {
 
         void Render(float deltaTime, int tilesetWidth, SpriteRenderer renderer)
         {
+            renderer.shader.use();
             glm::vec2 frame;
             if (moving)
             {

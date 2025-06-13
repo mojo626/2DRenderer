@@ -19,8 +19,10 @@ void main()
 
 	// Output position of the vertex
 	gl_Position = projection * vec4(squareVertices*particleSize + particleCenter_wordspace, 1.0f);
+	
 
 	// UV of the vertex. No special space for this one.
 	UV = squareVertices.xy + vec2(0.5, 0.5);
+	//gl_Position = vec4(UV, 0.0, 1.0);
 	particlecolor = color;
 }
